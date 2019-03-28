@@ -72,5 +72,12 @@ pre,p,h1 {
 }
 
 .p5_bkgd {
+  @extend .full-bkgd;
+  background-image: url();
   background-color:#f7f7f7;
+}
+
+.faq_bkgd {
+  @extend .p5_bkgd;
+    background-color:white;
 }

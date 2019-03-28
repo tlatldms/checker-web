@@ -34,6 +34,9 @@ class App extends Component {
                  <div class="full-bkfd p5_bkgd">
                  sdf
                  </div>
+                 <div class="faq_bkgd">
+                    FAQ
+                 </div>
             </React.Fragment>
         );
     }
