@@ -15,7 +15,7 @@ class Navi extends Component {
     
     handleScroll = (e) => {
         this.setState({ scroll: window.pageYOffset });
-        console.log(this.state.scroll)
+        //console.log(this.state.scroll)
         if (this.state.scroll > window.innerHeight) {
             naviScroll="after-height"
         } else {

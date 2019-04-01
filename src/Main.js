@@ -3,20 +3,47 @@ import * as Text from 'textKorean';
 import Logo from 'checker-logo.svg';
 import FaqList from 'FaqList';
 import Navi from 'Navi';
-import { timingSafeEqual } from 'crypto';
+import LabelImg from 'label.png';
+
+
 class App extends Component {
-    state={
-        scroll: 3,
+    constructor () {
+        super();
     }
 
+    state={
+        scroll: 3,
+        lang: "kr"
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, { passive: true })
+    }
+    
+      componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll)
+      }
     listenScroll = (e) => {
         this.setState({ scroll: window.pageYOffset });
+    }
+    
+    handleScroll = (e) => {
+        this.setState({ scroll: window.pageYOffset });
+        
+        if (this.state.scroll > (window.innerHeight)*2) {
+            console.log("Ddddddddd");
+        } 
+        
+    }
+    lockScroll = (e) => {
+
     }
     render() {
        
         return (
             <React.Fragment>
                 <Navi />
+                {this.handleScroll}
                 <div className="full-bkgd white-text">
                     <p className="p1_1">{Text.p1_1}</p>
                     <br/><br/><br/>
@@ -35,6 +62,15 @@ class App extends Component {
                  <div className="white_bkgd center-texts">
                         <h1>{Text.p3_1}</h1>
                         <pre><p>{Text.p3_2}</p></pre>
+                        <div className="out" >
+                            <div className="labels-box">
+                                <img className="labels" src={LabelImg} alt="" />
+                                <img className="labels" src={LabelImg} alt="" />
+                                <img className="labels" src={LabelImg} alt="" />
+                                <img className="labels" src={LabelImg} alt="" />                              
+                            </div>
+                        </div>
+                       
                  </div>
                  <div className="p4_bkgd white-text">
                     <div className="center-texts">
@@ -44,11 +80,25 @@ class App extends Component {
                     </div>
                  </div>
                  <div className="full-bkfd p5_bkgd">
-                 sdf
+                    <div className="p5-texts">
+                        <pre><h1>{Text.p5_1}</h1></pre>
+                        <pre><p>{Text.p5_2}</p></pre>
+                    </div>
+                    <div className="date-flow">
+                        <div className="dates">
+                            {[1,2,3,4,5].map(x=>{ return <p> {Text[`p5_date_${String(x)}`]} </p> }) }
+                        </div>
+                        <div className="flow-pic">
+                        <hr />
+                        </div>
+                        <div className="date-contents">
+                            {[1,2,3,4,5].map(x=>{ return <p> {Text[`p5_flow_${String(x)}`]} </p> }) }
+                        </div>
+                    </div>
                  </div>
                  <div className="white_bkgd">
                     {this.listenScroll}
-                    {console.log(this.state.scroll+"df")}
+                   
                     <h1>{Text.p6_FAQ}</h1>
                     <p>{Text.p6_1}</p>
                     <br/>

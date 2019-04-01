@@ -21,10 +21,12 @@ export const p4_flow_4="전용 APP-보안코드 스캔\n(정확한 제품정보 
 
 export const p5_1="LEADING SAFE AND RELIABLE\nLOGISTICS MARKET";
 export const p5_2="'체커(CHECKER)'는 정품 확인 및 물류추적을 한눈에 제공하여\n안전하고 신뢰가능한 물류시장을 이끌어 나갈 것입니다.";
-export const p5_04="2018.04";
-export const p5_08="2018.08";
-export const p5_10="2018.10";
-export const p5_11="2018.11";
+export const p5_date_1="2018.04";
+export const p5_date_2="2018.08";
+export const p5_date_3="2018.10";
+export const p5_date_4="2018.11";
+export const p5_date_5="2018.11";
+
 export const p5_flow_1="'체커(Checker)' 창업";
 export const p5_flow_2="경기도 블록체인 해커톤(최우수상)";
 export const p5_flow_3="ZER01NE day(스타트업 부분 참가)";

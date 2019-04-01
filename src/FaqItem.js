@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import * as Text from 'textKorean';
-//{ Text.p6_q`${String(obj)}` }
 import SlideToggle from 'react-slide-toggle';
 
-const eases = window.eases;
-
-const ToggleText = () => "Toggle";
-
+//const eases = window.eases;
+//const ToggleText = () => "Toggle";
 class FaqItem extends Component {
 
     state = {
@@ -24,7 +21,7 @@ class FaqItem extends Component {
 
         return (
             <div className="faq-item-box">
-                {console.log(obj)}
+        
                 
                 <SlideToggle
                     duration={1000}
