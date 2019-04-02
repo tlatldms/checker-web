@@ -6,6 +6,11 @@ import LabelImg from 'images/label.png';
 import Phone from 'images/sp.png';
 import BackgroundSlideshow from 'react-background-slideshow'
 import image1 from 'images/aa.jpg';
+import FooterLogoA from 'images/checker-logo-footer.svg';
+import FooterLogoB from 'images/hyundai-logo.png';
+
+import { Controller, Scene } from 'react-scrollmagic';
+import { Tween, Timeline } from 'react-gsap';
 
 let languages = {
     en: require('textEnglish'),
@@ -103,7 +108,6 @@ class App extends Component {
                             <h1 className="p1_2_1">{Text.p1_2_1}</h1>
                             <br/>
                             <p className="p1_3">{Text.p1_3}</p>
-
                         </div>
                 
                     <div className="full-bkgd white-text">
@@ -119,16 +123,15 @@ class App extends Component {
                     <h1>{Text.p3_1}</h1>
                     <pre><p>{Text.p3_2}</p></pre>
                     <div className="out" >
-
                     {console.log(document.getElementsByClassName("labels-box"))}
-                        <div className="labels-box">
+                    <div className="labels-box">
                             {this.handleDivScroll}
                             <img className="labels" src={LabelImg} alt="" />
                             <img className="labels" src={LabelImg} alt="" />
                             <img className="labels" src={LabelImg} alt="" />
                             <img className="labels" src={LabelImg} alt="" />                              
                         </div>
-                    </div>                       
+                    </div>
                  </div>
                  <div className="p4_bkgd white-text">
                     <div className="center-texts">
@@ -171,11 +174,11 @@ class App extends Component {
                         <h5>{Text.footer_mail}</h5>
                         <h5>{Text.footer_addr}</h5>
                         <br/>
-                        <h5>{Text.footer_domain}</h5>
+                        <h5 className="hchecker-com">{Text.footer_domain}</h5>
                     </div>
                     <div className="footer-images">
-                        <img src={Logo} alt="" />
-                        <img src={Logo} alt="" />
+                        <img className="footer-checker-img" src={FooterLogoA} alt="" />
+                        <img className="footer-hyundai-img" src={FooterLogoB} alt="" />
                     </div>
                  </div>
             </React.Fragment>

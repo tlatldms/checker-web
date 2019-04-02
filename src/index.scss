@@ -1,3 +1,5 @@
+$phone-width:40vmax;
+
 body, html {
   margin: 0;
   height:100%;
@@ -68,7 +70,8 @@ div#root {
 }
 
 .pg2 {
-  margin-top:30vh;
+  margin-top: ($phone-width)/4;
+
 }
 .p3_bkgd {
   height:150vh;
@@ -118,6 +121,10 @@ pre,p,h1 {
   justify-content: center;
   margin:50px 0; 
   min-height: 0;
+  opacity: 0.7;
+}
+.hchecker-com {
+  opacity: 0.3;
 }
 
 .footer-left-texts * {
@@ -267,6 +274,7 @@ pre,p,h1 {
   min-width: 100%;
   display: flex;
   
+  
   background-color: black;
   z-index:-1;
 
@@ -282,6 +290,7 @@ pre,p,h1 {
 .out{
   border-radius: 100%;
   overflow: hidden;
+  margin-top:10vh;
 }
 
 .labels {
@@ -296,6 +305,8 @@ pre,p,h1 {
 .phone-img {
   position: absolute;
   top:185vh;
+  width: $phone-width;
+ 
 }
 
 .po8 {
@@ -324,4 +335,16 @@ pre,p,h1 {
 }
 .po1 {
   top:185vh;
+}
+
+
+.footer-images {
+  img {
+    width:50%;
+    
+  }
+  .footer-hyundai-img {
+    width: 30%;
+    margin-left:5%;
+  }
 }

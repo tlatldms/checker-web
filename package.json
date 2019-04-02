@@ -7,9 +7,11 @@
     "react": "^16.8.6",
     "react-background-slideshow": "^1.0.4",
     "react-dom": "^16.8.6",
+    "react-gsap": "^1.2.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "react-scrolllock": "^4.0.1",
+    "react-scrollmagic": "^2.1.0",
     "react-slide-toggle": "^0.2.4"
   },
   "scripts": {
