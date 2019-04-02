@@ -5,8 +5,8 @@
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
+    "react-background-slideshow": "^1.0.4",
     "react-dom": "^16.8.6",
-    "react-intl": "^2.8.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "react-scrolllock": "^4.0.1",

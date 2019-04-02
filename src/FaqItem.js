@@ -30,7 +30,7 @@ class FaqItem extends Component {
                         <div className="my-collapsible">
                             <div className="question-and-button">
                                 <div className="question-text">
-                                    {Text["p6_q"+String(obj)]}
+                                    <span class="Q">Q{obj}.</span> {Text["p6_q"+String(obj)]}
                                 </div>
                                 <button className="my-collapsible__toggle" onClick={onToggle}>
                                 ▽

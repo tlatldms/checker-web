@@ -1,40 +1,40 @@
 export const p1_1="hyundai motors group H-startup";
 export const p1_2="BLOCKCHAIN";
 export const p1_2_1="SECURITY LABEL";
-export const p1_3="세상에서 가장 안전하고 간편한 물류라벨";
+export const p1_3="정보보안 혁신에 도전하는 보안라벨";
 
-export const p2_1="SECURITY MARKET, SECURITY LABEL";
-export const p2_2="'체커(CHECKER)'는 세상에서 가장 안전하고 간편하며 신뢰할 수 있는 라벨이 되고자 합니다.\n\n변형된 DMC(DATA MATRIX CODE)에 블록체인 개인키를 넣어 출력된 라벨은\n물류분야 블록체인 시대를 열 것입니다.\n\n'체커(CHECKER)'는 제조사에서 손쉽게 도입하고 소비자들에게는 정품 확인 및 물류추적을\n한눈에 제공하여 모두가 신뢰할 수 있는 세상을 만들 것입니다.";
+export const p2_1="GENUINE MARKET , SECURITY LABEl";
+export const p2_2="'체커(CHECKER)'는 세상에서 가장 안전하고 간편하며 신뢰할 수 있는 물류플랫폼을 제공하고자 합니다\n\n제조사는 손쉽게 최고의 보안라벨과 시스템을 도입하고\n소비자들은 제품의 정품확인 및 이력조회 정보를 한눈에 볼 수 있게 하여\n모두가 신뢰할 수 있는 세상을 만들 것입니다.";
 
 export const p3_1="사용자가 편한 디바이스";
-export const p3_2="'체커(Checker)'를 도입한다면 산업용 PDA가 아닌 스마트폰으로\n누구나 손쉽게 최고의 SCM시스템을 구축 할 수 있습니다.";
-export const p3_3="강한 보안 시스템";
-export const p3_4="PKI(Public Key Infrastructure) 공개키 암호화와 메트릭스\n암호화를 통해 불법 위/변조를 방지할 수 있습니다.";
+export const p3_2="Checker를 도입하면 산업용 PDA가 아닌 스마트폰으로\n누구나 손쉽게 최고의 보안라벨을 사용할 수 있습니다.";
+export const p3_3="강력한 보안 시스템";
+export const p3_4="Hash 함수를 이용한 Data의 무결성 검증,\nPKI 암호화와 블록체인 서버 구성을 통해 불법 위/변조를\n방지할 수 있습니다.";
 
-export const p4_1="신뢰할 수 있는 블록체인";
-export const p4_2="하이브리드 블록체인을 통해 신속한 제품상태 확인 및\n정확하고 투명한 거래가 가능합니다.";
-export const p4_3="온라인 실시간 정품확인";
+export const p4_1="신뢰할 수 있는 SCM 구축";
+export const p4_2="Checker의 보안라벨과 시스템을 물류정보에 연동하면\n정품보증 및 추적성을 확보하며 정확하고 투명한 거래가 가능합니다.";
+export const p4_3="실시간 정품확인 및 이력조회";
 export const p4_flow_1="WEB기반 라벨출력\n(인증허가제)";
 export const p4_flow_2="라벨 프린터기\n(네트워크 통제)";
 export const p4_flow_3="보안코드 / 라벨인쇄\n(실시간 블록체인에 기록)";
 export const p4_flow_4="전용 APP-보안코드 스캔\n(정확한 제품정보 확인)";
 
-export const p5_1="LEADING SAFE AND RELIABLE\nLOGISTICS MARKET";
-export const p5_2="'체커(CHECKER)'는 정품 확인 및 물류추적을 한눈에 제공하여\n안전하고 신뢰가능한 물류시장을 이끌어 나갈 것입니다.";
+export const p5_1="위대한 도전의 시작";
+export const p5_2="Checker는 모두가 안심하고 정품제품을 쓸 수 있는 세상을 만들기 위해\n열정과 지혜를 모아 도전하고 있습니다.";
 export const p5_date_1="2018.04";
 export const p5_date_2="2018.08";
 export const p5_date_3="2018.10";
 export const p5_date_4="2018.11";
 export const p5_date_5="2018.11";
 
-export const p5_flow_1="'체커(Checker)' 창업";
-export const p5_flow_2="경기도 블록체인 해커톤(최우수상)";
-export const p5_flow_3="ZER01NE day(스타트업 부분 참가)";
-export const p5_flow_4="2018 현대자동차 테크데이";
-export const p5_flow_5="2018 현대자동차 스타트업 데모데이\n(최우수상)";
+export const p5_flow_1="현대자동차 사내스타트업 선발";
+export const p5_flow_2="경기도 블록체인 해커톤/최우수상";
+export const p5_flow_3="ZER01NE day/스타트업 부분 참가";
+export const p5_flow_4="2018 현대자동차 테크데이 참가";
+export const p5_flow_5="2018 현대자동차 스타트업 데모데이\n/최우수상";
 
 export const p6_FAQ="FAQ";
-export const p6_1="자주 묻는 질문들을 통해 '체커(CHECKER)'에 대해 자세히 알아보세요.";
+export const p6_1="자주 묻는 질문들을 통해 Checker를 자세히 알아보세요.";
 export const p6_q1="'Checker'는 어떤 역할을 해주나요?";
 export const p6_a1="-라벨을 매개체로 한 블록체인기술이 적용된 정품확인/물류추적 시스템입니다.";
 export const p6_q2="블록체인에서 시간을 소요하나요?";
