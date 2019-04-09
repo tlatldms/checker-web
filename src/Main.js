@@ -304,7 +304,7 @@ class App extends Component {
                         <pre><p>{Text.p5_2}</p></pre>
                     </div>
                     <div className="date-flow">                     
-                        {[1,2,3,4,5].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text"> {Text[`p5_date_${String(x)}`]} </h6> <h6 className="date-contents-text"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
+                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text"> {Text[`p5_date_${String(x)}`]} </h6> <pre><h6 className="date-contents-text"> {Text[`p5_flow_${String(x)}`]} </h6></pre></div>}) }         
                     </div>
                  </div>
                  <div className="full-bkgd p6-bkgd">

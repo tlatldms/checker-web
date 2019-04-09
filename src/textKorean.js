@@ -29,12 +29,14 @@ export const p5_date_2="2018.08";
 export const p5_date_3="2018.10";
 export const p5_date_4="2018.11";
 export const p5_date_5="2018.11";
+export const p5_date_6="2019.04";
 
 export const p5_flow_1="현대자동차 사내스타트업 선발";
 export const p5_flow_2="경기도 블록체인 해커톤/최우수상";
 export const p5_flow_3="ZER01NE day/스타트업 부분 참가";
 export const p5_flow_4="2018 현대자동차 테크데이 참가";
 export const p5_flow_5="2018 현대자동차 스타트업 데모데이\n/최우수상";
+export const p5_flow_6="신용보증기금 NEST 제 5기 선발";
 
 export const p6_FAQ="FAQ";
 export const p6_1="자주 묻는 질문들을 통해 Checker를 자세히 알아보세요.";

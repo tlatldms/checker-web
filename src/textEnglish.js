@@ -5,38 +5,41 @@ export const p1_3_1="Challenging Data security innovation";
 export const p1_3_2="세상에서 가장 안전하고 간편한 보안라벨";
 export const p1_3_3="믿을 수 있는 정품시장을 만들어주는 보안라벨";
 
-export const p2_1="SE여어TY LABEL";
-export const p2_2="'Checker' aims to provide the safest, simplest and most reliable logistics platform";
+export const p2_1="GENUINE MARKET, SECURITY LABEl";
+export const p2_2="'Checker' is aiming to provide";
+export const p2_2_1="the safest, simplest and the most reliable logistics platform.\n\nCompanys can easily adopt the best security Label and System.\nConsumers can check a verification  and history of a product.\n'Checker' will make the world more  trustful.";
 
-export const p3_1="사용자가 편한 디바이스";
-export const p3_2="'체커(Checker)'를 도입한다면 산업용 PDA가 아닌 스마트폰으로\n누구나 손쉽게 최고의 SCM시스템을 구축 할 수 있습니다.";
-export const p3_3="강한 보안 시스템";
-export const p3_4="PKI(Public Key Infrastructure) 공개키 암호화와 메트릭스\n암호화를 통해 불법 위/변조를 방지할 수 있습니다.";
+export const p3_1="User friendly device";
+export const p3_2="'Checker' can be used by smartphone instead of industrial PDA.\nSo everyone can easily and cost-effectively use the best security Label.";
+export const p3_3="Powerful security system";
+export const p3_4="'Checker' use the Hash function, PKI encryption,\nand Block-Chain to validate data integrity\nto prevent illegal counterfeit.";
 
-export const p4_1="신뢰할 수 있는 블록체인";
-export const p4_2="하이브리드 블록체인을 통해 신속한 제품상태 확인 및\n정확하고 투명한 거래가 가능합니다.";
-export const p4_3="온라인 실시간 정품확인";
-export const p4_flow_1="WEB기반 라벨출력\n(인증허가제)";
-export const p4_flow_2="라벨 프린터기\n(네트워크 통제)";
-export const p4_flow_3="보안코드 / 라벨인쇄\n(실시간 블록체인에 기록)";
-export const p4_flow_4="전용 APP-보안코드 스캔\n(정확한 제품정보 확인)";
+export const p4_1="Developed a reliable SCM";
+export const p4_2="When Checker's security Label and System are linked to ERP.\nEnsure real-time tracking and genuine certification of products.";
+export const p4_3="Real-time tracking and\nGenuine certification of products";
+export const p4_flow_1="WEB-based Label printing\n(Certification Authority)";
+export const p4_flow_2="Label printer\n(Network control)";
+export const p4_flow_3="Security code/Label printing\n(real-time recoding)";
+export const p4_flow_4="App-Security Code scanning\n(Check the information)";
 
-export const p5_1="LEADING SAFE AND RELIABLE\nLOGISTICS MARKET";
-export const p5_2="'체커(CHECKER)'는 정품 확인 및 물류추적을 한눈에 제공하여\n안전하고 신뢰가능한 물류시장을 이끌어 나갈 것입니다.";
+export const p5_1="Beginning of the greatest challenge";
+export const p5_2="'Checker' is committed to make the world safer for everyone to use genuine products.\n We are challenging with passion and wisdom.";
 export const p5_date_1="2018.04";
 export const p5_date_2="2018.08";
 export const p5_date_3="2018.10";
 export const p5_date_4="2018.11";
 export const p5_date_5="2018.11";
+export const p5_date_6="2019.04";
 
-export const p5_flow_1="'체커(Checker)' 창업";
-export const p5_flow_2="경기도 블록체인 해커톤(최우수상)";
-export const p5_flow_3="ZER01NE day(스타트업 부분 참가)";
-export const p5_flow_4="2018 현대자동차 테크데이";
-export const p5_flow_5="2018 현대자동차 스타트업 데모데이\n(최우수상)";
+export const p5_flow_1="Start of the businees in HMG\n(in-company venture)";
+export const p5_flow_2="Won the first prize in Block-Chain\nHackathon contest, Korea";
+export const p5_flow_3="Participated in the HMG’s start-up area (ZERO1NE)";
+export const p5_flow_4="Participated in TECH-DAY\n(Hyundai Motor Group)";
+export const p5_flow_5="Won the first prize in the DEMO-day\nin HMG";
+export const p5_flow_6="Selected as the part of the NEST program\nin the Korea Credit Guarantee Fund";
 
 export const p6_FAQ="FAQ";
-export const p6_1="자주 묻는 질문들을 통해 '체커(CHECKER)'에 대해 자세히 알아보세요.";
+export const p6_1="Learn more about 'Checker' through FAQ.";
 export const p6_q1="'Checker'는 어떤 역할을 해주나요?";
 export const p6_a1="-라벨을 매개체로 한 블록체인기술이 적용된 정품확인/물류추적 시스템입니다.";
 export const p6_q2="블록체인에서 시간을 소요하나요?";
@@ -55,5 +58,5 @@ export const p6_q8="우리 회사에 맞도록 앱의 맞춤화가 가능한가�
 export const p6_a8="답8";
 
 export const footer_mail="hchecker_h@hyundai.com";
-export const footer_addr="16082 경기도 의왕시 철도박물관로 37, 현대자동차 의왕중앙연구소 7층";
+export const footer_addr="37, Cheoldobangmulgwan-ro, Uiwang-si, Gyeonggi-do, Republic of Korea";
 export const footer_domain="ⓒ Hchecker.com";
