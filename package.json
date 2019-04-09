@@ -12,7 +12,8 @@
     "react-scripts": "2.1.8",
     "react-scrolllock": "^4.0.1",
     "react-scrollmagic": "^2.1.0",
-    "react-slide-toggle": "^0.2.4"
+    "react-slide-toggle": "^0.2.4",
+    "react-slideshow-image": "^1.1.5"
   },
   "scripts": {
     "start": "cross-env NODE_PATH=src react-scripts start",

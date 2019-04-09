@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import * as Text from 'textKorean';
 import SlideToggle from 'react-slide-toggle';
-
+import Open from 'images/open.png';
+import Close from 'images/close.png';
 //const eases = window.eases;
 //const ToggleText = () => "Toggle";
+
 class FaqItem extends Component {
 
     state = {
@@ -18,13 +20,19 @@ class FaqItem extends Component {
 
     render() {
         const obj = this.props.obj;
-
+        
         return (
             <div className="faq-item-box">
         
                 
                 <SlideToggle
-                    duration={1000}
+                    onExpanded={({ hasReversed }) => {
+                        this.setState({opened:true})
+                    }}
+                    onCollapsed={({ hasReversed }) => {
+                        this.setState({opened:false})
+                    }}
+                    duration={300}
                     collapsed
                     render={({ onToggle, setCollapsibleElement }) => (
                         <div className="my-collapsible">
@@ -32,8 +40,8 @@ class FaqItem extends Component {
                                 <div className="question-text">
                                     <span class="Q">Q{obj}.</span> {Text["p6_q"+String(obj)]}
                                 </div>
-                                <button className="my-collapsible__toggle" onClick={onToggle}>
-                                ▽
+                                <button className={`my-collapsible__toggle faq-btn-${obj}`} onClick={onToggle}>
+                                    <img className="faq-rotate-btn" src={this.state.opened==true?Close:Open} alt="" />
                                 </button>
                             </div>
                             <div className="my-collapsible__content" ref={setCollapsibleElement}>

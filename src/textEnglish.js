@@ -1,10 +1,10 @@
-export const p1_1="여어영엉ㅇ여ㅓ";
-export const p1_2="B영어";
-export const p1_2_1="S영어EL";
-export const p1_3="세상영어어여어라벨";
+export const p1_1="hyundai motors group H-startup";
+export const p1_2="BLOCKCHAIN";
+export const p1_2_1="SECURITY LABEL";
+export const p1_3="Challenging Data security innovation";
 
 export const p2_1="SE여어TY LABEL";
-export const p2_2="'체커(CHECKER)'는 세상에서 가장 안전하고 간편하며 신뢰할 수 있는 라벨이 되고자 합니다.\n\n변형된 DMC(DATA MATRIX CODE)에 블록체인 개인키를 넣어 출력된 라벨은\n물류분야 블록체인 시대를 열 것입니다.\n\n'체커(CHECKER)'는 제조사에서 손쉽게 도입하고 소비자들에게는 정품 확인 및 물류추적을\n한눈에 제공하여 모두가 신뢰할 수 있는 세상을 만들 것입니다.";
+export const p2_2="'Checker' aims to provide the safest, simplest and most reliable logistics platform";
 
 export const p3_1="사용자가 편한 디바이스";
 export const p3_2="'체커(Checker)'를 도입한다면 산업용 PDA가 아닌 스마트폰으로\n누구나 손쉽게 최고의 SCM시스템을 구축 할 수 있습니다.";

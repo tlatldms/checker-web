@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import LogoBefore from 'images/checker-logo-white.svg';
-import LogoAfter from 'images/checker-logo-transparent.svg'
-let naviScroll="before-height"
-let logo=LogoAfter
+import LogoBefore from 'images/checker-logo-t.svg';
+import LogoAfter from 'images/checker-logo-b.png'
+let naviScroll="before-height";
+let logo=LogoBefore;
 class Navi extends Component {
     state={
         scroll: 3,
@@ -21,11 +21,11 @@ class Navi extends Component {
         //console.log(this.state.scroll)
         if (this.state.scroll > window.innerHeight) {
             naviScroll="after-height";
-            logo=LogoBefore;
+            logo=LogoAfter;
 
         } else {
             naviScroll="before-height"
-            logo=LogoAfter;
+            logo=LogoBefore;
         }
     }
  
@@ -34,16 +34,18 @@ class Navi extends Component {
         
         return (
             <div className={`navi ${naviScroll}`}>
-                <img src={logo} alt="" />
-                <div className="lan-btns">
-                    <div>
-                        <button onClick={this.props.selectKr} className={'lan-btn '+(this.props.lang==='kr'?'la-active':'none')+' korean'}>
-                            KR
-                        </button>
-                        <button onClick={this.props.selectEn} className={'lan-btn '+(this.props.lang==='en'?'la-active':'none')+ ' english'}>
-                            EN
-                        </button>    
-                        </div>
+                <div className="for-btm-line">
+                    <img src={logo} alt="" />
+                    <div className="lan-btns">
+                        <div>
+                            <button onClick={this.props.selectKr} className={'lan-btn '+(this.props.lang==='kr'?'la-active':'none')+' korean'}>
+                                KR
+                            </button>
+                            <button onClick={this.props.selectEn} className={'lan-btn '+(this.props.lang==='en'?'la-active':'none')+ ' english'}>
+                                EN
+                            </button>    
+                            </div>
+                    </div>
                 </div>
             </div>
         );

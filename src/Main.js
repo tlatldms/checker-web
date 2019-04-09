@@ -9,8 +9,19 @@ import image1 from 'images/aa.jpg';
 import FooterLogoA from 'images/checker-logo-footer.svg';
 import FooterLogoB from 'images/hyundai-logo.png';
 
-import { Controller, Scene } from 'react-scrollmagic';
-import { Tween, Timeline } from 'react-gsap';
+import A from 'images/aa.jpg';
+import B from 'images/label.png';
+import C from 'images/sp.png';
+
+import icon1 from 'images/pc.svg';
+import icon2 from 'images/printer.svg';
+import icon3 from 'images/label3.png';
+import icon4 from 'images/phone.svg';
+
+import Lot from 'images/lot.gif';
+const imgUrls = [
+    1,2,3
+];
 
 let languages = {
     en: require('textEnglish'),
@@ -18,17 +29,84 @@ let languages = {
 }
 
 let phonePosition;
+
+
+
+const slideImages = [
+    'images/sp.png',
+    'images/sp.png',
+    'images/sp.png'
+];
+   
+  const properties = {
+    duration: 5000,
+    transitionDuration: 500,
+    infinite: true,
+    indicators: true,
+    arrows: true
+  }
+
+  class ImageSlide extends Component {
+              
+    languageSelect=()=> {
+        if (this.props.lang === 'kr') {
+            return 'kr';
+        } else {
+            return 'en';
+        }
+    }   
+    render() {
+        const { url, curidx, lang } = this.props;
+        const Text=languages[this.languageSelect()];
+        return (
+                
+            <div className="test-transition">
+                <div className={`test-bkgd pic${url} white-text`}>
+
+                <p className="p1_1">{Text.p1_1}</p>
+                    <br/><br/><br/>
+                    <h1 className="p1_2">{Text.p1_2}</h1>
+                    <h1 className="p1_2_1">{Text.p1_2_1}</h1>
+                    <br/>
+                    <p className="p1_3">{Text["p1_3_"+String(url)]}</p>
+                </div>
+            </div>      
+  
+        );
+    }
+
+    
+}
+
+
+
+
 class App extends Component {
     constructor (props) {
         super(props);
         this.selectEn = this.selectEn.bind(this);
         this.selectKr = this.selectKr.bind(this);
-
+        this.state = {
+            currentImageIndex: 0,
+            lang: 'kr'
+        };
+        this.nextSlide = this.nextSlide.bind(this);
     }
 
     state={
         scroll: 3,
-        lang: "kr"
+        lang: 'kr'
+    }
+
+    nextSlide() {
+        const lastIndex = imgUrls.length - 1;
+        const { currentImageIndex } = this.state;
+        const shouldResetIndex = currentImageIndex === lastIndex;
+        const index = shouldResetIndex ? 0 : currentImageIndex + 1;
+
+        this.setState({
+            currentImageIndex: index
+        });
     }
 
         
@@ -48,13 +126,28 @@ class App extends Component {
     }
    
     componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll, { passive: true })
-        this.handleDivScroll();
+        window.addEventListener('scroll', this.handleScroll, { passive: false })
+        
+        this.interval = setInterval(() => {
+            //autoPlay some for specific period of times or
+            // Do some stuff you want
+            this.nextSlide();
+            }, 3000);
+        
+        /* 
+        this.handleDivScroll()
+        this.sudalMachine = document.getElementById("sudalMachine")
+        this.sudalMachineYPos = this.sudalMachine.offsetTop
+        this.sudalMachineScrollMaxSize = this.sudalMachine.scrollWidth
+        */
+    
     }
     
       componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll)
-        this.handleDivScroll();
+        clearInterval(this.interval);
+        
+        //this.handleDivScroll();
       }
     listenScroll = (e) => {
         this.setState({ scroll: window.pageYOffset });
@@ -62,26 +155,15 @@ class App extends Component {
     
     handleScroll = (e) => {
         this.setState({ scroll: window.pageYOffset });
+        let curScroll = this.state.scroll
         
-        if (this.state.scroll < (window.innerHeight)) {
+        if (curScroll < (window.innerHeight)+60) {
             phonePosition="po1"
-        } else if (this.state.scroll < (window.innerHeight)+15) {
+        } else {
             phonePosition="po2"
-        } else if (this.state.scroll < (window.innerHeight)+30) {
-            phonePosition="po3"
-        } else if (this.state.scroll < (window.innerHeight)+45) {
-            phonePosition="po4"
-        } else if (this.state.scroll < (window.innerHeight)+60) {
-            phonePosition="po5"
-        } else if (this.state.scroll < (window.innerHeight)+75) {
-            phonePosition="po6"
-        } else if (this.state.scroll < (window.innerHeight)+90) {
-            phonePosition="po7"
-        } else if (this.state.scroll < (window.innerHeight)+105) {
-            phonePosition="po8"
-        } else if (this.state.scroll < (window.innerHeight)+120) {
-            phonePosition="po9"
         }
+
+
     }
     lockScroll = (e) => {
     }
@@ -91,56 +173,107 @@ class App extends Component {
         console.log(container.scrollTop)
         console.log(container.scrollLeft)
     }
+
+
+
+
+
     
     render() {
        const Text=languages[this.languageSelect()];
         return (
             <React.Fragment>
-                
+
+            
                 <Navi selectEn={this.selectEn} selectKr={this.selectKr} lang={this.state.lang}/>
-                {this.handleScroll}
                 
-                        <div className="full-bkgd white-text">
-                        <BackgroundSlideshow images={[ image1, image1, image1 ]} animationDelay={5000} className="back-slide"/>
-                            <p className="p1_1">{Text.p1_1}</p>
-                            <br/><br/><br/>
-                            <h1 className="p1_2">{Text.p1_2}</h1>
-                            <h1 className="p1_2_1">{Text.p1_2_1}</h1>
-                            <br/>
-                            <p className="p1_3">{Text.p1_3}</p>
-                        </div>
                 
-                    <div className="full-bkgd white-text">
-                        <div className="center-texts">
-                            <h1 className="p2_1">{Text.p2_1}</h1> 
-                            <br/>
-                            <pre><p className="p2_2">{Text.p2_2}</p></pre>
-                        </div>
-                    </div>
+                <ImageSlide url={imgUrls[this.state.currentImageIndex]} lang={this.state.lang} className="full-bkgd tmptmp"/>
                  
-                 <div className="white_bkgd center-texts pg2">  
+                 {/*<BackgroundSlideshow images={[ image1, image1, image1 ]} animationDelay={5000} className="back-slide"/>  */}
+                 {/*
+                <div className="full-bkgd white-text">
+                    <p className="p1_1">{Text.p1_1}</p>
+                    <br/><br/><br/>
+                    <h1 className="p1_2">{Text.p1_2}</h1>
+                    <h1 className="p1_2_1">{Text.p1_2_1}</h1>
+                    <br/>
+                    <p className="p1_3">{Text.p1_3}</p>
+                </div>
+                */}
+                
+                
+                <div className="full-bkgd white-text p2-bkgd">
+                    <div className="center-texts">
+                        <h1 className="p2_1">{Text.p2_1}</h1> 
+                        <br/>
+                        <pre><p className="p2_2">{Text.p2_2}</p></pre>
+                    </div>
+                </div>
+                 
+                 <div className="white_bkgd center-texts p3_bkgd">  
                     <img className={`phone-img ${phonePosition}`} src={Phone} alt="" /> 
                     <h1>{Text.p3_1}</h1>
                     <pre><p>{Text.p3_2}</p></pre>
-                    <div className="out" >
-                    {console.log(document.getElementsByClassName("labels-box"))}
-                    <div className="labels-box">
-                            {this.handleDivScroll}
-                            <img className="labels" src={LabelImg} alt="" />
-                            <img className="labels" src={LabelImg} alt="" />
-                            <img className="labels" src={LabelImg} alt="" />
-                            <img className="labels" src={LabelImg} alt="" />                              
+                    <div className="lot-box">
+                        <img src={Lot} className="lot" alt="" />
+                        <div className="lot-texts">
+                            <h1>{Text.p3_3}</h1>
+                            <pre><p>{Text.p3_4}</p></pre>
                         </div>
                     </div>
+                    {/* 
+                    <div className="p4-out" >
+                    
+                        <div className="p4-inside">
+                            <div className="labels-box" id="sudalMachine" >
+                                
+                                <img className="labels" src={LabelImg} alt="" />
+                                <img className="labels" src={LabelImg} alt="" />
+                                <img className="labels" src={LabelImg} alt="" />
+                                <img className="labels" src={LabelImg} alt="" />                              
+                            </div>
+                            <div className="labels-texts">
+                                <h1>{Text.p3_3}</h1>
+                                <pre><p>{Text.p3_4}</p></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    */}
                  </div>
                  <div className="p4_bkgd white-text">
                     <div className="center-texts">
                         <h1 className="p4_1">{Text.p4_1}</h1>
                         <br/>
                         <pre><p className="p4_2">{Text.p4_2}</p></pre>
+                        <div class="for-b">
+                            <div className="p4-flow-box">
+                                <div className="p4-flow-circles">
+                                    <img className="p4-flow-icons" src={icon1} alt=""/>
+                                    <pre><p>{Text.p4_flow_1}</p></pre>
+                                </div>
+                                <div className="p4-flow-circles">
+                                    <img className="p4-flow-icons" src={icon2} alt=""/>
+                                    <pre><p>{Text.p4_flow_2}</p></pre>
+                                </div>
+                                <div className="p4-flow-circles">
+                                    <img className="p4-flow-icons" src={icon3} alt=""/>
+                                    <pre><p>{Text.p4_flow_3}</p></pre>
+                                </div>
+                                <div className="p4-flow-circles">
+                                    <img className="p4-flow-icons" src={icon4} alt=""/>
+                                    <pre><p>{Text.p4_flow_4}</p></pre>        
+                                </div>
+                            </div>
+                            <div className="p4-on-flow-box">
+                                <h6>{Text.p4_3}</h6>
+                            </div>
+                        </div>
+
                     </div>
                  </div>
-                 <div className="full-bkfd p5_bkgd">
+                 <div className="full-bkfd p5_bkgd p5-bkgd">
                     <div className="p5-texts">
                         <pre><h1>{Text.p5_1}</h1></pre>
                         <pre><p>{Text.p5_2}</p></pre>
@@ -159,10 +292,11 @@ class App extends Component {
                  </div>
                  <div className="white_bkgd">
                     {this.listenScroll}
-                   
-                    <h1>{Text.p6_FAQ}</h1>
-                    <p>{Text.p6_1}</p>
-                    <br/>
+                    <div className="faq-texts">
+                        <h1>{Text.p6_FAQ}</h1>
+                        <p>{Text.p6_1}</p>
+                    </div>
+                    
                     <br/><br/>
                     <div className="Faq-box">
                         <FaqList />
