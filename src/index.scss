@@ -471,6 +471,7 @@ pre,p,h1 {
   margin:50px 0; 
   min-height: 0;
   opacity: 0.7;
+  font-size: $lot-width/30;
 }
 .hchecker-com {
   opacity: 0.3;
@@ -610,12 +611,12 @@ pre,p,h1 {
 }
 .question-text {
   margin:$lot-width/22 0;
-  font-size: $lot-width/21;
+  font-size: $lot-width/27;
 }
 .answer {
   margin-top:1vh;
   margin-bottom:2vh;
-  font-size: $lot-width/21;
+  font-size: $lot-width/27;
 }
 
 
@@ -873,7 +874,7 @@ pre,p,h1 {
 
   p {
     opacity: 0.7;
-    font-size: $lot-width/20;
+    font-size: $lot-width/25;
     line-height: 1.5;
   }
 }
