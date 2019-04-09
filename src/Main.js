@@ -3,22 +3,24 @@ import Logo from 'images/checker-logo.svg';
 import FaqList from 'FaqList';
 import Navi from 'Navi';
 import LabelImg from 'images/label.png';
-import Phone from 'images/sp.png';
+import Phone from 'images/phone.png';
 import BackgroundSlideshow from 'react-background-slideshow'
 import image1 from 'images/aa.jpg';
 import FooterLogoA from 'images/checker-logo-footer.svg';
 import FooterLogoB from 'images/hyundai-logo.png';
-
+import P3 from 'p3';
 import A from 'images/aa.jpg';
 import B from 'images/label.png';
 import C from 'images/sp.png';
 
+import DevIcon from 'images/develop.svg';
 import icon1 from 'images/pc.svg';
 import icon2 from 'images/printer.svg';
 import icon3 from 'images/label3.png';
 import icon4 from 'images/phone.svg';
 
 import Lot from 'images/lot.gif';
+import { timingSafeEqual } from 'crypto';
 const imgUrls = [
     1,2,3
 ];
@@ -47,28 +49,60 @@ const slideImages = [
   }
 
   class ImageSlide extends Component {
-              
+    constructor(props) {
+        super(props);
+        this.state={
+            lang: this.props.lang,
+            url: this.props.url
+        }
+    }
     languageSelect=()=> {
-        if (this.props.lang === 'kr') {
+        if (this.state.lang === 'kr') {
             return 'kr';
         } else {
             return 'en';
         }
-    }   
+        
+    }
+
+    static getDerivedStateFromProps(nextProps, prevState){
+        if (nextProps.lang !== prevState.lang | nextProps.url !== prevState.url ) {
+            return  {lang : nextProps.lang, url: nextProps.url} ;
+        }
+    }
+
+    shouldComponentUpdate(nextProps, nextState){
+        if (nextProps.url !== this.state.url | nextProps.lang !==this.state.lang)
+            return true;
+        else return false;
+    }
+    componentDidUpdate(prevProps, prevState){
+        console.log("componentDidUpdate: " + JSON.stringify(prevProps) + " " + JSON.stringify(prevState));
+    }
     render() {
-        const { url, curidx, lang } = this.props;
         const Text=languages[this.languageSelect()];
         return (
                 
             <div className="test-transition">
-                <div className={`test-bkgd pic${url} white-text`}>
 
-                <p className="p1_1">{Text.p1_1}</p>
-                    <br/><br/><br/>
-                    <h1 className="p1_2">{Text.p1_2}</h1>
-                    <h1 className="p1_2_1">{Text.p1_2_1}</h1>
-                    <br/>
-                    <p className="p1_3">{Text["p1_3_"+String(url)]}</p>
+            {console.log(this.languageSelect())}
+            {console.log(this.state.lang)}
+            {console.log(this.state.url)}
+            {console.log(Text["p1_3_"+String(this.state.url)])}
+                <div className={`pic${this.state.url}`}>
+                    <div className="front white-text">
+                        <div className="back white-text">
+                            <div className="first-texts">
+                                <p className="p1_1">{Text.p1_1}</p>
+                                <br/><br/><br/>
+                                <h1 className="p1_2">{Text.p1_2}</h1>
+                                <h1 className="p1_2_1">{Text.p1_2_1}</h1>
+                                <br/>
+                                <p className="p1_3">{Text["p1_3_"+String(this.state.url)]}</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>      
   
@@ -93,6 +127,10 @@ class App extends Component {
         this.nextSlide = this.nextSlide.bind(this);
     }
 
+    shouldComponentUpdate(nextProps, nextState){
+        console.log("shouldComponentUpdate: " + JSON.stringify(nextProps) + " " + JSON.stringify(nextState));
+        return true;
+    }
     state={
         scroll: 3,
         lang: 'kr'
@@ -104,6 +142,13 @@ class App extends Component {
         const shouldResetIndex = currentImageIndex === lastIndex;
         const index = shouldResetIndex ? 0 : currentImageIndex + 1;
 
+        const elm = document.getElementById('root')
+        .querySelector('[class^="pic"],[class*=" pic"]');
+      elm.className = `pic${index+1}`
+      const newone = elm.cloneNode(true);
+      elm.parentNode.replaceChild(newone, elm);
+      
+      
         this.setState({
             currentImageIndex: index
         });
@@ -133,6 +178,7 @@ class App extends Component {
             // Do some stuff you want
             this.nextSlide();
             }, 3000);
+            this.forceUpdate();
         
         /* 
         this.handleDivScroll()
@@ -183,83 +229,58 @@ class App extends Component {
        const Text=languages[this.languageSelect()];
         return (
             <React.Fragment>
-
-            
-                <Navi selectEn={this.selectEn} selectKr={this.selectKr} lang={this.state.lang}/>
-                
-                
-                <ImageSlide url={imgUrls[this.state.currentImageIndex]} lang={this.state.lang} className="full-bkgd tmptmp"/>
-                 
-                 {/*<BackgroundSlideshow images={[ image1, image1, image1 ]} animationDelay={5000} className="back-slide"/>  */}
-                 {/*
-                <div className="full-bkgd white-text">
-                    <p className="p1_1">{Text.p1_1}</p>
-                    <br/><br/><br/>
-                    <h1 className="p1_2">{Text.p1_2}</h1>
-                    <h1 className="p1_2_1">{Text.p1_2_1}</h1>
-                    <br/>
-                    <p className="p1_3">{Text.p1_3}</p>
-                </div>
-                */}
-                
-                
+                <Navi selectEn={this.selectEn} selectKr={this.selectKr} lang={this.state.lang}/>               
+                <ImageSlide url={imgUrls[this.state.currentImageIndex]} lang={this.state.lang} className="full-bkgd tmptmp"/>                   
                 <div className="full-bkgd white-text p2-bkgd">
                     <div className="center-texts">
                         <h1 className="p2_1">{Text.p2_1}</h1> 
                         <br/>
                         <pre><p className="p2_2">{Text.p2_2}</p></pre>
                     </div>
-                </div>
-                 
-                 <div className="white_bkgd center-texts p3_bkgd">  
-                    <img className={`phone-img ${phonePosition}`} src={Phone} alt="" /> 
-                    <h1>{Text.p3_1}</h1>
-                    <pre><p>{Text.p3_2}</p></pre>
+                </div>              
+                 <div className="full-bkgd center-texts p3-bkgd">  
+                    <img className={`phone-img ${phonePosition}`} src={Phone} alt="" />
+                    <div className="p3-texts">
+                        <h1>{Text.p3_1}</h1>
+                        <pre><p>{Text.p3_2}</p></pre>
+                    </div>
                     <div className="lot-box">
+
                         <img src={Lot} className="lot" alt="" />
                         <div className="lot-texts">
                             <h1>{Text.p3_3}</h1>
                             <pre><p>{Text.p3_4}</p></pre>
                         </div>
                     </div>
-                    {/* 
-                    <div className="p4-out" >
-                    
-                        <div className="p4-inside">
-                            <div className="labels-box" id="sudalMachine" >
-                                
-                                <img className="labels" src={LabelImg} alt="" />
-                                <img className="labels" src={LabelImg} alt="" />
-                                <img className="labels" src={LabelImg} alt="" />
-                                <img className="labels" src={LabelImg} alt="" />                              
-                            </div>
-                            <div className="labels-texts">
-                                <h1>{Text.p3_3}</h1>
-                                <pre><p>{Text.p3_4}</p></pre>
-                            </div>
-                        </div>
-                    </div>
-
-                    */}
                  </div>
-                 <div className="p4_bkgd white-text">
+                 { /*<P3 />*/}
+                 <div className="full-bkgd p4-bkgd white-text">
                     <div className="center-texts">
                         <h1 className="p4_1">{Text.p4_1}</h1>
                         <br/>
                         <pre><p className="p4_2">{Text.p4_2}</p></pre>
-                        <div class="for-b">
+                        
                             <div className="p4-flow-box">
                                 <div className="p4-flow-circles">
                                     <img className="p4-flow-icons" src={icon1} alt=""/>
                                     <pre><p>{Text.p4_flow_1}</p></pre>
                                 </div>
+                                <div className="p4-arrow">
+                                    ▶
+                                </div>
                                 <div className="p4-flow-circles">
                                     <img className="p4-flow-icons" src={icon2} alt=""/>
                                     <pre><p>{Text.p4_flow_2}</p></pre>
                                 </div>
+                                <div className="p4-arrow">
+                                    ▶
+                                </div>
                                 <div className="p4-flow-circles">
                                     <img className="p4-flow-icons" src={icon3} alt=""/>
                                     <pre><p>{Text.p4_flow_3}</p></pre>
+                                </div>
+                                <div className="p4-arrow">
+                                    ▶
                                 </div>
                                 <div className="p4-flow-circles">
                                     <img className="p4-flow-icons" src={icon4} alt=""/>
@@ -269,28 +290,21 @@ class App extends Component {
                             <div className="p4-on-flow-box">
                                 <h6>{Text.p4_3}</h6>
                             </div>
-                        </div>
+                       
 
                     </div>
                  </div>
-                 <div className="full-bkfd p5_bkgd p5-bkgd">
+                 <div className="full-bkgd p5-bkgd">
+                    <img src={DevIcon} alt="" className="dev-icon"/>
                     <div className="p5-texts">
                         <pre><h1>{Text.p5_1}</h1></pre>
                         <pre><p>{Text.p5_2}</p></pre>
                     </div>
-                    <div className="date-flow">
-                        <div className="dates">
-                            {[1,2,3,4,5].map(x=>{ return <p className="date-flow-text"> {Text[`p5_date_${String(x)}`]} </p> }) }
-                        </div>
-                        <div className="flow-pic">
-                        <hr />
-                        </div>
-                        <div className="date-contents">
-                            {[1,2,3,4,5].map(x=>{ return <p className="date-contents-text"> {Text[`p5_flow_${String(x)}`]} </p> }) }
-                        </div>
+                    <div className="date-flow">                     
+                        {[1,2,3,4,5].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text"> {Text[`p5_date_${String(x)}`]} </h6> <h6 className="date-contents-text"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
                     </div>
                  </div>
-                 <div className="white_bkgd">
+                 <div className="full-bkgd white-bkgd p6-bkgd">
                     {this.listenScroll}
                     <div className="faq-texts">
                         <h1>{Text.p6_FAQ}</h1>

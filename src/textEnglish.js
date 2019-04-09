@@ -1,7 +1,9 @@
 export const p1_1="hyundai motors group H-startup";
 export const p1_2="BLOCKCHAIN";
 export const p1_2_1="SECURITY LABEL";
-export const p1_3="Challenging Data security innovation";
+export const p1_3_1="Challenging Data security innovation";
+export const p1_3_2="세상에서 가장 안전하고 간편한 보안라벨";
+export const p1_3_3="믿을 수 있는 정품시장을 만들어주는 보안라벨";
 
 export const p2_1="SE여어TY LABEL";
 export const p2_2="'Checker' aims to provide the safest, simplest and most reliable logistics platform";
