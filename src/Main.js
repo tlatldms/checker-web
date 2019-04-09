@@ -203,7 +203,7 @@ class App extends Component {
         this.setState({ scroll: window.pageYOffset });
         let curScroll = this.state.scroll
         
-        if (curScroll < (window.innerHeight)+60) {
+        if (curScroll <window.innerHeight ) {
             phonePosition="po1"
         } else {
             phonePosition="po2"
@@ -229,13 +229,16 @@ class App extends Component {
        const Text=languages[this.languageSelect()];
         return (
             <React.Fragment>
+                {console.log(window.innerHeight)}
+                {console.log(window.innerWidth)}
                 <Navi selectEn={this.selectEn} selectKr={this.selectKr} lang={this.state.lang}/>               
                 <ImageSlide url={imgUrls[this.state.currentImageIndex]} lang={this.state.lang} className="full-bkgd tmptmp"/>                   
                 <div className="full-bkgd white-text p2-bkgd">
                     <div className="center-texts">
                         <h1 className="p2_1">{Text.p2_1}</h1> 
                         <br/>
-                        <pre><p className="p2_2">{Text.p2_2}</p></pre>
+                        <pre><p className="p2_2">{Text.p2_2}</p>
+                        <p className="p2_2">{Text.p2_2_1}</p></pre>
                     </div>
                 </div>              
                  <div className="full-bkgd center-texts p3-bkgd">  
@@ -254,8 +257,8 @@ class App extends Component {
                     </div>
                  </div>
                  { /*<P3 />*/}
-                 <div className="full-bkgd p4-bkgd white-text">
-                    <div className="center-texts">
+                 <div className="p4-bkgd white-text">
+                    <div className="center-texts p4-inner">
                         <h1 className="p4_1">{Text.p4_1}</h1>
                         <br/>
                         <pre><p className="p4_2">{Text.p4_2}</p></pre>
@@ -304,7 +307,7 @@ class App extends Component {
                         {[1,2,3,4,5].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text"> {Text[`p5_date_${String(x)}`]} </h6> <h6 className="date-contents-text"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
                     </div>
                  </div>
-                 <div className="full-bkgd white-bkgd p6-bkgd">
+                 <div className="full-bkgd p6-bkgd">
                     {this.listenScroll}
                     <div className="faq-texts">
                         <h1>{Text.p6_FAQ}</h1>
