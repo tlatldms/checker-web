@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import Label from 'images/label.png';
-import { black } from 'ansi-colors';
 class p3 extends Component {
 
     state={

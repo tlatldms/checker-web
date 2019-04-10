@@ -4,7 +4,6 @@ import Navi from 'Navi';
 import Phone from 'images/phone.png';
 import FooterLogoA from 'images/checker-logo-footer.svg';
 import FooterLogoB from 'images/hyundai-logo.png';
-import P3 from 'p3';
 import DevIcon from 'images/develop.svg';
 import LockIcon from 'images/lock.svg';
 import icon1 from 'images/pc.svg';
@@ -177,8 +176,8 @@ class App extends Component {
                         <h1 className="p2_1">{Text.p2_1}</h1> 
                         <br/>
                         <div className="p2-texts">
-                            { this.state.lang == 'kr' ? <p className="p2_2_pre">{Text.p2_2}</p> : <p className="p2_2">{Text.p2_2}</p>}
-                            {this.state.lang == 'kr'? <p className="p2_2_pre">{Text.p2_2_1}</p> : <p className="p2_2">{Text.p2_2_1}</p>}
+                            { this.state.lang === 'kr' ? <p className="p2_2_pre">{Text.p2_2}</p> : <p className="p2_2">{Text.p2_2}</p>}
+                            {this.state.lang === 'kr'? <p className="p2_2_pre">{Text.p2_2_1}</p> : <p className="p2_2">{Text.p2_2_1}</p>}
                         </div>
                     </div>
                 </div>              
@@ -186,7 +185,7 @@ class App extends Component {
                     <img className={`phone-img ${phonePosition}`} src={Phone} alt="" />
                     <div className="p3-texts">
                         <h1>{Text.p3_1}</h1>
-                        <div className={this.state.lang=='kr'?"p3-texts-p":"p3-texts-p-en"}><p >{Text.p3_2}</p></div>
+                        <div className={this.state.lang==='kr'?"p3-texts-p":"p3-texts-p-en"}><p >{Text.p3_2}</p></div>
                     </div>
                     <div className="lot-box">
 

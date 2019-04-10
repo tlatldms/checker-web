@@ -7,7 +7,7 @@ export const p1_3_3="ddd";
 
 export const p2_1="GENUINE MARKET, SECURITY LABEl";
 export const p2_2="'Checker' is aiming to provide\nthe safest, simplest and the most reliable logistics platform.";
-export const p2_2_1="\n\nCompanys can easily adopt the best security Label and System.\nConsumers can check a verification  and history of a product.\n'Checker' will make the world more  trustful.";
+export const p2_2_1="\n\nCompanies can easily adopt the best security Label and System.\nConsumers can check a verification and history of a product.\n'Checker' will make the world more trustful.";
 
 export const p3_1="User friendly device";
 export const p3_2="'Checker' can be used by smartphone instead of industrial PDA.\nSo everyone can easily and cost-effectively use the best security Label.";

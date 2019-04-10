@@ -13,9 +13,9 @@ class FaqItem extends Component {
     }
 
     handdleToggle = (e) => {
-        this.state.opened = !this.state.opened
-        if (this.state.opened === true) {
-        }
+        this.setState({
+            opened : !this.state.opened
+        });
     }
 
     render() {
@@ -41,7 +41,7 @@ class FaqItem extends Component {
                                     <span class="Q">Q{obj}.</span> {Text["p6_q"+String(obj)]}
                                 </div>
                                 <button className={`my-collapsible__toggle faq-btn-${obj}`} onClick={onToggle}>
-                                    <img className="faq-rotate-btn" src={this.state.opened==true?Close:Open} alt="" />
+                                    <img className="faq-rotate-btn" src={this.state.opened===true?Close:Open} alt="" />
                                 </button>
                             </div>
                             <div className="my-collapsible__content" ref={setCollapsibleElement}>
