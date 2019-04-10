@@ -22,8 +22,8 @@ export const p4_flow_2="Label printer\n(Network control)";
 export const p4_flow_3="Security code/Label printing\n(real-time recoding)";
 export const p4_flow_4="App-Security Code scanning\n(Check the information)";
 
-export const p5_1="Beginning of the greatest challenge";
-export const p5_2="'Checker' is committed to make the world safer for everyone to use genuine products.\n We are challenging with passion and wisdom.";
+export const p5_1="Beginning of the\ngreatest challenge";
+export const p5_2="'Checker' is committed to make the world safer\nfor everyone to use genuine products.\n We are challenging with passion and wisdom.";
 export const p5_date_1="2018.04";
 export const p5_date_2="2018.08";
 export const p5_date_3="2018.10";
@@ -33,7 +33,7 @@ export const p5_date_6="2019.04";
 
 export const p5_flow_1="Start of the businees in HMG\n(in-company venture)";
 export const p5_flow_2="Won the first prize in Block-Chain\nHackathon contest, Korea";
-export const p5_flow_3="Participated in the HMG’s start-up area (ZERO1NE)";
+export const p5_flow_3="Participated in the HMG’s\nstart-up area (ZERO1NE)";
 export const p5_flow_4="Participated in TECH-DAY\n(Hyundai Motor Group)";
 export const p5_flow_5="Won the first prize in the DEMO-day\nin HMG";
 export const p5_flow_6="Selected as the part of the NEST program\nin the Korea Credit Guarantee Fund";

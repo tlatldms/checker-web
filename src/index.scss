@@ -364,6 +364,7 @@ pre,p,h1 {
 
     height:1rem;
     width: 1rem;
+    margin:2rem;
   }
   .p4-flow-icons {
     width:6rem;
@@ -380,7 +381,6 @@ pre,p,h1 {
   justify-content: center;
   align-items: center;
   p {
-    margin-top:0.5rem;
     font-size:0.7rem;
     color:white;
     opacity: 1;
@@ -389,7 +389,9 @@ pre,p,h1 {
 @media only screen and (max-width: 600px) {
   .p4-bkgd {
     background-image: url('images/m_img_05.jpg');
-  
+    p {
+      font-size:$lot-width/18;
+    }
   }
   .p4-flow-box {
     flex-direction: column;
@@ -402,28 +404,31 @@ pre,p,h1 {
   }
 
   .p4-flow-circles {
-
     p {
       margin: -0.5rem 0;
+      font-size: $lot-width/24;
+    }
+    .p4-flow-icons {
+      width:$lot-width/3.8;
     }
   }
 }
 .p4-inner {
   padding:15vh 0;
 }
-@media only screen and (max-width: 1050px) {
 
-}
 
 
 .p5-bkgd {
   height: auto;
   background-color:#f7f7f7;
+  padding: $lot-width/10 0;
 }
 @media only screen and (max-width: 600px) {
-  .p5-bkgd {
-    padding:10vh 0;
-  }
+}
+
+@media only screen and (max-width: 1050px) {
+
 }
 
 
@@ -572,10 +577,14 @@ pre,p,h1 {
   }
 }
 
+.p3-texts-p {
+  height:auto;
+}
 @media only screen and (max-width: 400px) {
   .p3-texts {
     margin-top: $phone-height/1.4;
   }
+
 }
 @media only screen and (max-width: 600px) {
   .lot-texts {
@@ -585,7 +594,7 @@ pre,p,h1 {
       font-size:$lot-width/10;
     }
     p {
-      font-size:$lot-width/25;
+      font-size:$lot-width/20;
     }
   }
   .lot-box {
@@ -595,9 +604,20 @@ pre,p,h1 {
   .lot {
   }
   .p3-texts {
-
     margin-top: $phone-height/1.25;
+    p {
+      font-size:$lot-width/20;
+    }
   }
+  .p3-texts-p {
+    width:$lot-width*1.1;
+
+  }
+  .lot-texts-p {
+    width:$lot-width;
+    margin: 0 auto;
+  }
+
 }
 
 .faq-rotate-btn {
@@ -623,6 +643,11 @@ pre,p,h1 {
 @media only screen and (max-width: 600px) {
   .answer {
     margin:0;
+    font-size: $lot-width/20;
+  }
+  .question-text {
+    margin:$lot-width/22 0;
+    font-size: $lot-width/20;
   }
 }
 .my-collapsible__content {
@@ -693,22 +718,9 @@ pre,p,h1 {
 }
 .dates-both {
   display:flex;
-  height:4rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .dates-both {
-    flex-direction: column;
-    height:4rem;
-  }
-  .date-flow-text {
-    margin:0;
-    height:1rem;
-  }
-  .date-contents-text {
-   margin:1rem; 
-   height:1rem;
-  }
+  height:auto;
+  width:auto;
+  margin: $lot-width/20 0;
 }
 .date-flow {
   display:flex;
@@ -716,22 +728,55 @@ pre,p,h1 {
   justify-content: center;
    
   padding: 5vh;
-  font-size:2rem;
+  font-size:$lot-width/12;
   font-weight: 600;
 }
 
 .date-flow-text {
   color:#0037a6;
-  width:8rem;
+  width:$lot-width/3;
   text-align: left;
+  height:auto;
   margin:0;
 }
 .date-flow-text, .date-contents-text {
-  height:4rem;
+  height: auto;
   margin:0;
-
 }
 
+.date-contents-text {
+  width: 60vmax;
+  word-break: break-all;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .dates-both {
+    flex-direction: column;
+  }
+  .date-flow-text {
+    margin:0;
+    height:1rem;
+  }
+  .date-contents-text {
+   margin:1rem; 
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .dates-both {
+    flex-direction: column;
+ 
+  }
+  .date-flow-text {
+    margin:0;
+
+  }
+  .date-contents-text {
+   margin:1rem; 
+   width: $lot-width/1.2;
+  }
+}
 .flow-pic hr {
   margin-top:5vh;
   width: 1px;
@@ -739,11 +784,13 @@ pre,p,h1 {
   display: inline-block;
 }
 
+
+
 .p5-texts {
   text-align:center;
   h1 {
     font-family: NotoSansCJKkr;
-    font-size: 2rem;
+    font-size: $lot-width/13;
     font-weight: 900;
     font-style: normal;
     font-stretch: normal;
@@ -753,11 +800,28 @@ pre,p,h1 {
   }
   p{
     opacity: 0.7;
-    font-size:1rem;
+    font-size: $lot-width/25;
   }
 }
 
+.p5-texts-p {
+  width:80vmax;
+  margin:$lot-width/20 auto;
+}
+@media only screen and (max-width: 600px) {
+  .p5-texts-h1 {
+    width:$lot-width/2;
+  }
+}
 
+@media only screen and (max-width: 1050px) {
+  .p5-texts-p {
+    width:$lot-width;
+  }
+  .p5-texts-h1 {
+    width:$lot-width;
+  }
+}
 
 .labels-box {
   min-width: 100%;
@@ -796,7 +860,6 @@ pre,p,h1 {
     height:50vw;
   }
 }
-
 
 .labels-texts {
   padding-top:2rem;
@@ -864,8 +927,9 @@ pre,p,h1 {
 }
 
 .dev-icon {
-  margin-bottom:1.5rem;
+  margin-bottom:$lot-width/20;
   object-fit: contain;
+  width:$lot-width/7;
 }
 .faq-texts {
   h1 {

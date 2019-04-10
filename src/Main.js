@@ -14,6 +14,7 @@ import B from 'images/label.png';
 import C from 'images/sp.png';
 
 import DevIcon from 'images/develop.svg';
+import LockIcon from 'images/lock.svg';
 import icon1 from 'images/pc.svg';
 import icon2 from 'images/printer.svg';
 import icon3 from 'images/label3.png';
@@ -235,6 +236,7 @@ class App extends Component {
                 <ImageSlide url={imgUrls[this.state.currentImageIndex]} lang={this.state.lang} className="full-bkgd tmptmp"/>                   
                 <div className="full-bkgd white-text p2-bkgd">
                     <div className="center-texts">
+                    <img src={LockIcon} alt="" />
                         <h1 className="p2_1">{Text.p2_1}</h1> 
                         <br/>
                         <pre><p className="p2_2">{Text.p2_2}</p>
@@ -245,14 +247,14 @@ class App extends Component {
                     <img className={`phone-img ${phonePosition}`} src={Phone} alt="" />
                     <div className="p3-texts">
                         <h1>{Text.p3_1}</h1>
-                        <pre><p>{Text.p3_2}</p></pre>
+                        <div className="p3-texts-p"><p>{Text.p3_2}</p></div>
                     </div>
                     <div className="lot-box">
 
                         <img src={Lot} className="lot" alt="" />
                         <div className="lot-texts">
                             <h1>{Text.p3_3}</h1>
-                            <pre><p>{Text.p3_4}</p></pre>
+                            <div className="lot-texts-p"><p>{Text.p3_4}</p></div>
                         </div>
                     </div>
                  </div>
@@ -261,7 +263,7 @@ class App extends Component {
                     <div className="center-texts p4-inner">
                         <h1 className="p4_1">{Text.p4_1}</h1>
                         <br/>
-                        <pre><p className="p4_2">{Text.p4_2}</p></pre>
+                        <div className="p4-p"><p>{Text.p4_2}</p></div>
                         
                             <div className="p4-flow-box">
                                 <div className="p4-flow-circles">
@@ -300,11 +302,11 @@ class App extends Component {
                  <div className="full-bkgd p5-bkgd">
                     <img src={DevIcon} alt="" className="dev-icon"/>
                     <div className="p5-texts">
-                        <pre><h1>{Text.p5_1}</h1></pre>
-                        <pre><p>{Text.p5_2}</p></pre>
+                        <div className="p5-texts-h1"><h1>{Text.p5_1}</h1></div>
+                        <div className="p5-texts-p"><p>{Text.p5_2}</p></div>
                     </div>
                     <div className="date-flow">                     
-                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text"> {Text[`p5_date_${String(x)}`]} </h6> <pre><h6 className="date-contents-text"> {Text[`p5_flow_${String(x)}`]} </h6></pre></div>}) }         
+                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text"> {Text[`p5_date_${String(x)}`]} </h6><h6 className="date-contents-text"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
                     </div>
                  </div>
                  <div className="full-bkgd p6-bkgd">
