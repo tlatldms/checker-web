@@ -67,7 +67,7 @@ class ImageSlide extends Component {
                                 <h1 className="p1_2_1">{Text.p1_2_1}</h1>
                                 <br/>
                                 { /* <p id={this.state.lang=="kr"? `p1_p_${this.state.url}`:`p1_p_en_${this.state.url}`}></p>*/}
-                                <p>Challenging Data security innovation</p>
+                                <p className="p1_3">Challenging Data security innovation</p>
                             </div>
                         </div>
                     </div>

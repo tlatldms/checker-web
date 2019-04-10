@@ -35,7 +35,7 @@ class Navi extends Component {
         return (
             <div className={`navi ${naviScroll}`}>
                 <div className="for-btm-line">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="" className="navi-logo"/>
                     <div className="lan-btns">
                         <div>
                             <button onClick={this.props.selectKr} className={'lan-btn '+(this.props.lang==='kr'?'la-active':'none')+' korean'}>

@@ -184,30 +184,6 @@ code {
   }
 }
 
-/*
-@media only screen and (max-width: 400px) {
-  #root .pic1 .front,
-  #root .pic2 .back {
-    min-width:130vmin;
-  }
-  #root .pic1.init .back {
-    background-image: none;
-  }
-  #root .pic2 .front,
-  #root .pic3 .back {
-    min-width:130vmin;
-  }    
-  #root .pic3 .front,
-  #root .pic1 .back {
-    min-width:130vmin;
-  }
-
-  #root .back, #root .front {
-    min-width:130vmin;
-  }
-}
-
-*/
 @-webkit-keyframes in {
   from {
     opacity: 0.2;
@@ -261,13 +237,6 @@ code {
   }
 }
 
-/*
-@media only screen and (max-width: 400px) {
-  .full-bkgd {
-    min-width:130vmin;
-  }
-}
-*/
 
 div#root {
   height:100%;
@@ -275,7 +244,6 @@ div#root {
 
 .white-text {
   color:white;
-
 }
 
 .p1_2, .p1_2_1 {
@@ -296,9 +264,9 @@ div#root {
 }
 
 
-
 .p1_1 {
   font-size: $lot-width/20;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   z-index:100;
 }
 .p1_3 {
@@ -735,7 +703,6 @@ pre,p,h1 {
   padding: 1.5vh 0;
 }
 
-
 .before-height {
   background-color:transparent;
   -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
@@ -767,7 +734,14 @@ pre,p,h1 {
 .navi button {
   border:0;
   background-color:transparent;
-  font-size:1rem;
+  font-size:$lot-width/20;
+  font-family: NotoSansCJKkr;
+}
+
+@media only screen and (max-width: 800px) {
+  .navi button {
+    font-size:$lot-width/13;
+  }
 }
 
 .navi button:hover {
