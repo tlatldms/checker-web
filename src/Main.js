@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
-import Logo from 'images/checker-logo.svg';
 import FaqList from 'FaqList';
 import Navi from 'Navi';
-import LabelImg from 'images/label.png';
 import Phone from 'images/phone.png';
-import BackgroundSlideshow from 'react-background-slideshow'
-import image1 from 'images/aa.jpg';
 import FooterLogoA from 'images/checker-logo-footer.svg';
 import FooterLogoB from 'images/hyundai-logo.png';
 import P3 from 'p3';
-import A from 'images/aa.jpg';
-import B from 'images/label.png';
-import C from 'images/sp.png';
-
 import DevIcon from 'images/develop.svg';
 import LockIcon from 'images/lock.svg';
 import icon1 from 'images/pc.svg';
@@ -21,35 +13,15 @@ import icon3 from 'images/label3.png';
 import icon4 from 'images/phone.svg';
 
 import Lot from 'images/lot.gif';
-import { timingSafeEqual } from 'crypto';
-const imgUrls = [
-    1,2,3
-];
 
+const imgUrls = [1,2,3];
 let languages = {
     en: require('textEnglish'),
     kr: require('textKorean')
 }
-
 let phonePosition;
 
-
-
-const slideImages = [
-    'images/sp.png',
-    'images/sp.png',
-    'images/sp.png'
-];
-   
-  const properties = {
-    duration: 5000,
-    transitionDuration: 500,
-    infinite: true,
-    indicators: true,
-    arrows: true
-  }
-
-  class ImageSlide extends Component {
+class ImageSlide extends Component {
     constructor(props) {
         super(props);
         this.state={
@@ -58,12 +30,8 @@ const slideImages = [
         }
     }
     languageSelect=()=> {
-        if (this.state.lang === 'kr') {
-            return 'kr';
-        } else {
-            return 'en';
-        }
-        
+        if (this.state.lang === 'kr') return 'kr';
+        else return 'en';  
     }
 
     static getDerivedStateFromProps(nextProps, prevState){
@@ -77,15 +45,15 @@ const slideImages = [
             return true;
         else return false;
     }
+
     componentDidUpdate(prevProps, prevState){
         console.log("componentDidUpdate: " + JSON.stringify(prevProps) + " " + JSON.stringify(prevState));
     }
+
     render() {
         const Text=languages[this.languageSelect()];
-        return (
-                
+        return (           
             <div className="test-transition">
-
             {console.log(this.languageSelect())}
             {console.log(this.state.lang)}
             {console.log(this.state.url)}
@@ -103,17 +71,11 @@ const slideImages = [
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>      
-  
         );
-    }
-
-    
+    }   
 }
-
-
 
 
 class App extends Component {
@@ -145,23 +107,19 @@ class App extends Component {
 
         const elm = document.getElementById('root')
         .querySelector('[class^="pic"],[class*=" pic"]');
-      elm.className = `pic${index+1}`
-      const newone = elm.cloneNode(true);
-      elm.parentNode.replaceChild(newone, elm);
-      
-      
+        elm.className = `pic${index+1}`
+        const newone = elm.cloneNode(true);
+        elm.parentNode.replaceChild(newone, elm);
+
         this.setState({
             currentImageIndex: index
         });
     }
 
-        
+
     languageSelect=()=> {
-        if (this.state.lang === 'kr') {
-            return 'kr';
-        } else {
-            return 'en';
-        }
+        if (this.state.lang === 'kr')  return 'kr';
+        else return 'en';
     }       
     
     selectKr = (e)=> {
@@ -175,26 +133,14 @@ class App extends Component {
         window.addEventListener('scroll', this.handleScroll, { passive: false })
         
         this.interval = setInterval(() => {
-            //autoPlay some for specific period of times or
-            // Do some stuff you want
             this.nextSlide();
             }, 3000);
             this.forceUpdate();
-        
-        /* 
-        this.handleDivScroll()
-        this.sudalMachine = document.getElementById("sudalMachine")
-        this.sudalMachineYPos = this.sudalMachine.offsetTop
-        this.sudalMachineScrollMaxSize = this.sudalMachine.scrollWidth
-        */
-    
     }
     
       componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll)
         clearInterval(this.interval);
-        
-        //this.handleDivScroll();
       }
     listenScroll = (e) => {
         this.setState({ scroll: window.pageYOffset });
@@ -203,16 +149,11 @@ class App extends Component {
     handleScroll = (e) => {
         this.setState({ scroll: window.pageYOffset });
         let curScroll = this.state.scroll
-        
         if (curScroll <window.innerHeight ) {
             phonePosition="po1"
         } else {
             phonePosition="po2"
         }
-
-
-    }
-    lockScroll = (e) => {
     }
 
     handleDivScroll = (e) => {
@@ -221,11 +162,6 @@ class App extends Component {
         console.log(container.scrollLeft)
     }
 
-
-
-
-
-    
     render() {
        const Text=languages[this.languageSelect()];
         return (
@@ -236,18 +172,20 @@ class App extends Component {
                 <ImageSlide url={imgUrls[this.state.currentImageIndex]} lang={this.state.lang} className="full-bkgd tmptmp"/>                   
                 <div className="full-bkgd white-text p2-bkgd">
                     <div className="center-texts">
-                    <img src={LockIcon} alt="" />
+                    <img src={LockIcon} alt="" className="lock-icon"/>
                         <h1 className="p2_1">{Text.p2_1}</h1> 
                         <br/>
-                        <pre><p className="p2_2">{Text.p2_2}</p>
-                        <p className="p2_2">{Text.p2_2_1}</p></pre>
+                        <div className="p2-texts">
+                            { this.state.lang == 'kr' ? <p className="p2_2_pre">{Text.p2_2}</p> : <p className="p2_2">{Text.p2_2}</p>}
+                            {this.state.lang == 'kr'? <p className="p2_2_pre">{Text.p2_2_1}</p> : <p className="p2_2">{Text.p2_2_1}</p>}
+                        </div>
                     </div>
                 </div>              
                  <div className="full-bkgd center-texts p3-bkgd">  
                     <img className={`phone-img ${phonePosition}`} src={Phone} alt="" />
                     <div className="p3-texts">
                         <h1>{Text.p3_1}</h1>
-                        <div className="p3-texts-p"><p>{Text.p3_2}</p></div>
+                        <div className={this.state.lang=='kr'?"p3-texts-p":"p3-texts-p-en"}><p >{Text.p3_2}</p></div>
                     </div>
                     <div className="lot-box">
 
