@@ -58,7 +58,7 @@ class ImageSlide extends Component {
             {console.log(this.state.lang)}
             {console.log(this.state.url)}
             {console.log(Text["p1_3_"+String(this.state.url)])}
-                <div className={`pic${this.state.url}`}>
+                <div className={`pic${this.state.url} white-text`}>
                     <div className="front white-text">
                         <div className="back white-text">
                             <div className="first-texts">
@@ -67,7 +67,8 @@ class ImageSlide extends Component {
                                 <h1 className="p1_2">{Text.p1_2}</h1>
                                 <h1 className="p1_2_1">{Text.p1_2_1}</h1>
                                 <br/>
-                                <p className="p1_3">{Text["p1_3_"+String(this.state.url)]}</p>
+                                { /* <p id={this.state.lang=="kr"? `p1_p_${this.state.url}`:`p1_p_en_${this.state.url}`}></p>*/}
+                                <p>Challenging Data security innovation</p>
                             </div>
                         </div>
                     </div>

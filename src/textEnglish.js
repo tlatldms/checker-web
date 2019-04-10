@@ -2,12 +2,12 @@ export const p1_1="hyundai motors group H-startup";
 export const p1_2="BLOCKCHAIN";
 export const p1_2_1="SECURITY LABEL";
 export const p1_3_1="Challenging Data security innovation";
-export const p1_3_2="세상에서 가장 안전하고 간편한 보안라벨";
-export const p1_3_3="믿을 수 있는 정품시장을 만들어주는 보안라벨";
+export const p1_3_2="ssssss";
+export const p1_3_3="ddd";
 
 export const p2_1="GENUINE MARKET, SECURITY LABEl";
-export const p2_2="'Checker' is aiming to provide";
-export const p2_2_1="the safest, simplest and the most reliable logistics platform.\n\nCompanys can easily adopt the best security Label and System.\nConsumers can check a verification  and history of a product.\n'Checker' will make the world more  trustful.";
+export const p2_2="'Checker' is aiming to provide\nthe safest, simplest and the most reliable logistics platform.";
+export const p2_2_1="\n\nCompanys can easily adopt the best security Label and System.\nConsumers can check a verification  and history of a product.\n'Checker' will make the world more  trustful.";
 
 export const p3_1="User friendly device";
 export const p3_2="'Checker' can be used by smartphone instead of industrial PDA.\nSo everyone can easily and cost-effectively use the best security Label.";

@@ -84,6 +84,7 @@ code {
   background-size:cover;
   background-position:center;
   background-color: black;
+
 }
 
 #root .back {
@@ -122,6 +123,12 @@ code {
 #root .pic1 .front,
 #root .pic2 .back {
   background-image: url('images/img_01.jpg');
+  p#p1_p_1:after {
+    content: "보안 혁신에 도전하는 보안라벨11";
+  }
+  p#p1_p_en_1:after {
+    content: "Challenging Data security innovation22";
+  }
 }
 #root .pic1.init .back {
   background-image: none;
@@ -129,10 +136,23 @@ code {
 #root .pic2 .front,
 #root .pic3 .back {
   background-image: url('images/img_02.jpg');
+  p#p1_p_2:after {
+    content: "세상에서 가장 안전하고 간편한 보안라벨33";
+  }
+  p#p1_p_en_2:after {
+    content: "The safest and the most simple44";
+  }
 }
 #root .pic3 .front,
 #root .pic1 .back {
   background-image: url('images/img_03.jpg');
+  p#p1_p_3:after {
+    content: "믿을 수 있는 정품시장을 만들어주는 보안라벨55";
+  }
+  p#p1_p_en_3:after {
+    content: "Reliable Genuine Market66";
+  }
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -366,7 +386,7 @@ pre,p,h1 {
   background-image: url('images/img_05.jpg');
   height:auto;
   h1 {
-    font-size: $lot-width/18;
+    font-size: $lot-width/11;
   }
   p {
     font-size: $lot-width/30;
@@ -472,7 +492,7 @@ pre,p,h1 {
   display:flex;
   background-color: #262626;
   justify-content: space-around;
-  padding-left:5%;
+  padding: 0 $lot-width/40;
 }
 
 
@@ -491,8 +511,8 @@ pre,p,h1 {
 
 @media only screen and (max-width: 600px) {
   .footer {
-    padding-left:10%;
-    padding-bottom: 10%;
+    padding: $lot-width/20;
+    padding-bottom: $lot-width/4;
     flex-direction: column;
     height:40vh;
     h5 {
@@ -507,7 +527,7 @@ pre,p,h1 {
     }
 
     .footer-left-texts {
-      font-size: $lot-width/20;
+      font-size: $lot-width/15;
     }
 
   }
