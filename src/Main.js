@@ -61,13 +61,13 @@ class ImageSlide extends Component {
                     <div className="front white-text">
                         <div className="back white-text">
                             <div className="first-texts">
-                                <p className="p1_1">{Text.p1_1}</p>
+                                <p className="p1_1 x20">{Text.p1_1}</p>
                                 <br/><br/><br/>
-                                <h1 className="p1_2">{Text.p1_2}</h1>
-                                <h1 className="p1_2_1">{Text.p1_2_1}</h1>
+                                <h1 className="p1_2 x100">{Text.p1_2}</h1>
+                                <h1 className="p1_2_1 x100">{Text.p1_2_1}</h1>
                                 <br/>
                                 { /* <p id={this.state.lang=="kr"? `p1_p_${this.state.url}`:`p1_p_en_${this.state.url}`}></p>*/}
-                                <p className="p1_3">Challenging Data security innovation</p>
+                                <p className="p1_3 x28">Challenging Data security innovation</p>
                             </div>
                         </div>
                     </div>
@@ -173,65 +173,65 @@ class App extends Component {
                 <div className="full-bkgd white-text p2-bkgd">
                     <div className="center-texts">
                     <img src={LockIcon} alt="" className="lock-icon"/>
-                        <h1 className="p2_1">{Text.p2_1}</h1> 
+                        <h1 className="p2_1 x45">{Text.p2_1}</h1> 
                         <br/>
                         <div className="p2-texts">
-                            { this.state.lang === 'kr' ? <p className="p2_2_1_kr">{Text.p2_2}</p> : <p className="p2_2_1_en">{Text.p2_2}</p>}
-                            {this.state.lang === 'kr'? <p className="p2_2_2_kr">{Text.p2_2_1}</p> : <p className="p2_2_2_en">{Text.p2_2_1}</p>}
+                            { this.state.lang === 'kr' ? <p className="p2_2_1_kr x25">{Text.p2_2}</p> : <p className="p2_2_1_en x25">{Text.p2_2}</p>}
+                            {this.state.lang === 'kr'? <p className="p2_2_2_kr x25">{Text.p2_2_1}</p> : <p className="p2_2_2_en x25">{Text.p2_2_1}</p>}
                         </div>
                     </div>
                 </div>              
                  <div className="full-bkgd center-texts p3-bkgd">  
                     <img className={`phone-img ${phonePosition}`} src={Phone} alt="" />
                     <div className="p3-texts">
-                        <h1>{Text.p3_1}</h1>
-                        <div className={this.state.lang==='kr'?"p3-texts-p":"p3-texts-p-en"}><p >{Text.p3_2}</p></div>
+                        <h1 class="x40">{Text.p3_1}</h1>
+                        <div className={this.state.lang==='kr'?"p3-texts-p":"p3-texts-p-en"}><p className="x22">{Text.p3_2}</p></div>
                     </div>
                     <div className="lot-box">
 
                         <img src={Lot} className="lot" alt="" />
                         <div className="lot-texts">
-                            <h1>{Text.p3_3}</h1>
-                            <div className="lot-texts-p"><p>{Text.p3_4}</p></div>
+                            <h1 className="x40">{Text.p3_3}</h1>
+                            <div className="lot-texts-p"><p className="x22">{Text.p3_4}</p></div>
                         </div>
                     </div>
                  </div>
                  { /*<P3 />*/}
                  <div className="p4-bkgd white-text">
                     <div className="center-texts p4-inner">
-                        <h1 className="p4_1">{Text.p4_1}</h1>
+                        <h1 className="p4_1 x45">{Text.p4_1}</h1>
                         <br/>
-                        <div className="p4-p"><p>{Text.p4_2}</p></div>
+                        <div className="p4-p x22"><p>{Text.p4_2}</p></div>
                         
                             <div className="p4-flow-box">
                                 <div className="p4-flow-circles">
                                     <img className="p4-flow-icons" src={icon1} alt=""/>
-                                    <pre><p>{Text.p4_flow_1}</p></pre>
+                                    <pre><p className="x14">{Text.p4_flow_1}</p></pre>
                                 </div>
                                 <div className="p4-arrow">
                                     ▶
                                 </div>
                                 <div className="p4-flow-circles">
                                     <img className="p4-flow-icons" src={icon2} alt=""/>
-                                    <pre><p>{Text.p4_flow_2}</p></pre>
+                                    <pre><p className="x14">{Text.p4_flow_2}</p></pre>
                                 </div>
                                 <div className="p4-arrow">
                                     ▶
                                 </div>
                                 <div className="p4-flow-circles">
                                     <img className="p4-flow-icons" src={icon3} alt=""/>
-                                    <pre><p>{Text.p4_flow_3}</p></pre>
+                                    <pre><p className="x14">{Text.p4_flow_3}</p></pre>
                                 </div>
                                 <div className="p4-arrow">
                                     ▶
                                 </div>
                                 <div className="p4-flow-circles">
                                     <img className="p4-flow-icons" src={icon4} alt=""/>
-                                    <pre><p>{Text.p4_flow_4}</p></pre>        
+                                    <pre><p className="x14">{Text.p4_flow_4}</p></pre>        
                                 </div>
                             </div>
                             <div className="p4-on-flow-box">
-                                <h3 className="p4_3">{Text.p4_3}</h3>
+                                <h3 className="p4_3 x20">{Text.p4_3}</h3>
                             </div>
                        
 
@@ -240,18 +240,18 @@ class App extends Component {
                  <div className="full-bkgd p5-bkgd">
                     <img src={DevIcon} alt="" className="dev-icon"/>
                     <div className="p5-texts">
-                        <div className="p5-texts-h1"><h1>{Text.p5_1}</h1></div>
-                        <div className="p5-texts-p"><p>{Text.p5_2}</p></div>
+                        <div className="p5-texts-h1"><h1 className="x45">{Text.p5_1}</h1></div>
+                        <div className="p5-texts-p"><p className="x22">{Text.p5_2}</p></div>
                     </div>
                     <div className="date-flow">                     
-                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text"> {Text[`p5_date_${String(x)}`]} </h6><h6 className="date-contents-text"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
+                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text x20"> {Text[`p5_date_${String(x)}`]} </h6><h6 className="date-contents-text x24"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
                     </div>
                  </div>
                  <div className="full-bkgd p6-bkgd">
                     {this.listenScroll}
                     <div className="faq-texts">
-                        <h1>{Text.p6_FAQ}</h1>
-                        <p>{Text.p6_1}</p>
+                        <h1 className="x40">{Text.p6_FAQ}</h1>
+                        <p className="x20">{Text.p6_1}</p>
                     </div>
                     
                     <br/><br/>
@@ -262,10 +262,10 @@ class App extends Component {
                  </div>
                  <div className="footer">
                     <div className="footer-left-texts">
-                        <h5>{Text.footer_mail}</h5>
-                        <h5>{Text.footer_addr}</h5>
+                        <h5 className="x12">{Text.footer_mail}</h5>
+                        <h5 className="x12">{Text.footer_addr}</h5>
                         <br/>
-                        <h5 className="hchecker-com">{Text.footer_domain}</h5>
+                        <h5 className="hchecker-com x12">{Text.footer_domain}</h5>
                     </div>
                     <div className="footer-images">
                         <img className="footer-checker-img" src={FooterLogoA} alt="" />

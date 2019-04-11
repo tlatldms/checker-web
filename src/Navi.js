@@ -38,10 +38,10 @@ class Navi extends Component {
                     <img src={logo} alt="" className="navi-logo"/>
                     <div className="lan-btns">
                         <div className="lan-btns-inner">
-                            <button onClick={this.props.selectKr} className={'lan-btn '+(this.props.lang==='kr'?'la-active':'none')+' korean'}>
+                            <button onClick={this.props.selectKr} className={'lan-btn '+(this.props.lang==='kr'?'la-active':'none')+' korean x16'}>
                                 KR
                             </button>
-                            <button onClick={this.props.selectEn} className={'lan-btn '+(this.props.lang==='en'?'la-active':'none')+ ' english'}>
+                            <button onClick={this.props.selectEn} className={'lan-btn '+(this.props.lang==='en'?'la-active':'none')+ ' english x16'}>
                                 EN
                             </button>    
                         </div>
