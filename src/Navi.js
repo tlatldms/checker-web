@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LogoBefore from 'images/checker-logo-t.svg';
-import LogoAfter from 'images/checker-logo-b.png'
+import LogoAfter from 'images/checker-logo-b.svg';
 let naviScroll="before-height";
 let logo=LogoBefore;
 class Navi extends Component {
@@ -37,14 +37,14 @@ class Navi extends Component {
                 <div className="for-btm-line">
                     <img src={logo} alt="" className="navi-logo"/>
                     <div className="lan-btns">
-                        <div>
+                        <div className="lan-btns-inner">
                             <button onClick={this.props.selectKr} className={'lan-btn '+(this.props.lang==='kr'?'la-active':'none')+' korean'}>
                                 KR
                             </button>
                             <button onClick={this.props.selectEn} className={'lan-btn '+(this.props.lang==='en'?'la-active':'none')+ ' english'}>
                                 EN
                             </button>    
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

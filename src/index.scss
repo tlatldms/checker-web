@@ -124,6 +124,7 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 #root [class^="pic"] .front,
@@ -181,6 +182,12 @@ code {
   #root .pic3 .front,
   #root .pic1 .back {
     background-image: url('images/m_img_03.jpg');
+  }
+  .first-texts {
+    .p1_2, .p1_2_1 {
+      font-size:$lot-width/7.5;
+    }
+    width:99vw;
   }
 }
 
@@ -245,6 +252,13 @@ div#root {
 .white-text {
   color:white;
 }
+
+@media only screen and (max-width: 353px) {
+  .white-text {
+    color:pink;
+  }
+}
+
 
 .p1_2, .p1_2_1 {
   font-size: $lot-width/8;
@@ -742,6 +756,10 @@ pre,p,h1 {
   .navi button {
     font-size:$lot-width/13;
   }
+
+  .navi-logo {
+    width:50%;
+  }
 }
 
 .navi button:hover {
@@ -751,6 +769,14 @@ pre,p,h1 {
   display:flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .lan-btns-inner {
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+  }
 }
 
 .korean, .english {
