@@ -5,9 +5,9 @@ export const p1_3_1="Challenging Data security innovation";
 export const p1_3_2="ssssss";
 export const p1_3_3="ddd";
 
-export const p2_1="GENUINE MARKET, SECURITY LABEl";
-export const p2_2="'Checker' is aiming to provide\nthe safest, simplest and the most reliable logistics platform.";
-export const p2_2_1="\n\nCompanies can easily adopt the best security Label and System.\nConsumers can check a verification and history of a product.\n'Checker' will make the world more trustful.";
+export const p2_1="GENUINE MARKET, SECURITY LABEL";
+export const p2_2="'Checker' is aiming to provide the safest,\nsimplest and the most reliable logistics platform.\n\n";
+export const p2_2_1="Companies can easily adopt the best security Label and System.\nConsumers can check a verification and history of a product.\n'Checker' will make the world more trustful.";
 
 export const p3_1="User friendly device";
 export const p3_2="'Checker' can be used by smartphone instead of industrial PDA.\nSo everyone can easily and cost-effectively use the best security Label.";
@@ -23,7 +23,7 @@ export const p4_flow_3="Security code/Label printing\n(real-time recoding)";
 export const p4_flow_4="App-Security Code scanning\n(Check the information)";
 
 export const p5_1="Beginning of the\ngreatest challenge";
-export const p5_2="'Checker' is committed to make the world safer\nfor everyone to use genuine products.\n We are challenging with passion and wisdom.";
+export const p5_2="'Checker' is committed to make the world safer for everyone to use\ngenuine products.We are challenging with passion and wisdom.";
 export const p5_date_1="2018.04";
 export const p5_date_2="2018.08";
 export const p5_date_3="2018.10";

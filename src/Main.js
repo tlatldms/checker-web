@@ -176,8 +176,8 @@ class App extends Component {
                         <h1 className="p2_1">{Text.p2_1}</h1> 
                         <br/>
                         <div className="p2-texts">
-                            { this.state.lang === 'kr' ? <p className="p2_2_pre">{Text.p2_2}</p> : <p className="p2_2">{Text.p2_2}</p>}
-                            {this.state.lang === 'kr'? <p className="p2_2_pre">{Text.p2_2_1}</p> : <p className="p2_2">{Text.p2_2_1}</p>}
+                            { this.state.lang === 'kr' ? <p className="p2_2_1_kr">{Text.p2_2}</p> : <p className="p2_2_1_en">{Text.p2_2}</p>}
+                            {this.state.lang === 'kr'? <p className="p2_2_2_kr">{Text.p2_2_1}</p> : <p className="p2_2_2_en">{Text.p2_2_1}</p>}
                         </div>
                     </div>
                 </div>              
@@ -231,7 +231,7 @@ class App extends Component {
                                 </div>
                             </div>
                             <div className="p4-on-flow-box">
-                                <h6>{Text.p4_3}</h6>
+                                <h3 className="p4_3">{Text.p4_3}</h3>
                             </div>
                        
 
