@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import Root from 'client/Root';
 import * as serviceWorker from './serviceWorker';
-import 'es6-promise/auto';
+
 
 
 ReactDOM.render(

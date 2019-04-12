@@ -5,6 +5,7 @@
   "homepage": "https://tlatldms.github.io/checker-web",
   "dependencies": {
     "es6-promise": "^4.2.6",
+    "include-media": "^1.4.9",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
