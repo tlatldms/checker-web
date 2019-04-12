@@ -201,7 +201,7 @@ class App extends Component {
                     <div className="center-texts p4-inner">
                         <h1 className="p4_1 x45">{Text.p4_1}</h1>
                         <br/>
-                        <div className="p4-p x22"><p>{Text.p4_2}</p></div>
+                        <div className="p4-p"><p className= "x22">{Text.p4_2}</p></div>
                         
                             <div className="p4-flow-box">
                                 <div className="p4-flow-circles">

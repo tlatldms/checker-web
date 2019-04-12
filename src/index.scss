@@ -8,12 +8,214 @@ $breakpoints: (
   huge: 1200px
 );
 
+$small:2.2rem;
+$medium:2.4rem;
+$large:4rem;
+$huge:5.5rem;
+
 $wid :100vmin;
 $hgt :100vmax;
 $phone-width:$wid/3;
 $lot-width: 80vmin;
 @media only screen and (max-width: 600px) {
   $phone-width:25vmin;
+}
+
+@media (min-width: 1025px) {
+  .x100 {
+    font-size: $huge;
+    font-size: 100px;
+  }
+  .x45 {
+    font-size: $huge/1.7;
+    font-size: 45px;
+  }
+  .x40 {
+    font-size: $huge/1.8;
+    font-size: 40px;
+  }
+  .x28 {
+    font-size: $huge/2.42;
+    font-size: 28px;
+  }
+  .x25 {
+    font-size: $huge/2.83;
+    font-size: 25px;
+  }
+  .x24 {
+    font-size: $huge/2.42;
+    font-size: 24px;
+  }
+  .x22 {
+    font-size: $huge/2.83;
+    font-size: 22px;
+  }
+  .x20 {
+    font-size: $huge/2.83;
+    font-size: 20px;
+  }
+  .question-text {
+    .x18 {
+      font-size: $huge/2.26;
+      font-size: 18px;
+    }
+  }
+  .answer-text {
+    .x18 {
+      font-size: $huge/2.42;
+      font-size: 18px;
+    }
+  }
+  .x16 {
+    font-size:16px;
+  }
+  .x14{
+    font-size: 14px;
+  }
+  .x12 {
+    font-size: $huge/2.83;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .x100 {
+    font-size: $large;
+  }
+  .x45 {
+    font-size: $large/1.7;
+  }
+  .x40 {
+    font-size: $large/1.8;
+  }
+  .x28 {
+    font-size: $large/2.42;
+  }
+  .x25 {
+    font-size: $large/2.83;
+  }
+  .x24 {
+    font-size: $large/2.42;
+  }
+  .x22 {
+    font-size: $large/2.83;
+  }
+  .x20 {
+    font-size: $large/2.83;
+  }
+  .question-text {
+    .x18 {
+      font-size: $large/2.26;
+    }
+  }
+  .answer-text {
+    .x18 {
+      font-size: $large/2.42;
+    }
+  }
+  .x16 {
+    font-size:1$large/2.42;
+  }
+  .x14{
+    font-size: 12px;
+  }
+  .x12 {
+    font-size: $large/2.83;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .x100 {
+    font-size: $medium;
+  }
+  .x45 {
+    font-size: $medium/1.7;
+  }
+  .x40 {
+    font-size: $medium/1.8;
+  }
+  .x28 {
+    font-size: $medium/2.42;
+  }
+  .x25 {
+    font-size: $medium/2.83;
+  }
+  .x24 {
+    font-size: $medium/2.42;
+  }
+  .x22 {
+    font-size: $medium/2.83;
+  }
+  .x20 {
+    font-size: $medium/2.83;
+  }
+  .question-text {
+    .x18 {
+      font-size: $medium/2.26;
+    }
+  }
+  .answer-text {
+    .x18 {
+      font-size: $medium/2.42;
+    }
+  }
+  .x16 {
+    font-size: $medium/2.42;
+  }
+  .x14{
+    font-size: 12px;
+  }
+  .x12 {
+    font-size: $medium/2.83;
+  }
+}
+
+@media (max-width: 376px) {
+  .x100 {
+    font-size: $small
+  }
+  .x45 {
+    font-size: $small/1.7;
+  }
+  .x40 {
+    font-size: $small/1.8;
+  }
+  .x28 {
+    font-size: $small/2.42;
+  }
+  .x25 {
+    font-size: $small/2.83;
+  }
+  .x24 {
+    font-size: $small/2.42;
+  }
+  .x22 {
+    font-size: $small/2.83;
+  }
+  .x20 {
+    font-size: $small/2.83;
+  }
+  .question-text {
+    .x18 {
+      font-size: $small/2.26;
+    }
+  }
+  .answer-text {
+    .x18 {
+      font-size: $small/2.42;
+    }
+  }
+  .x16 {
+    font-size: $small/2.42;
+  }
+  .x14{
+    font-size: 12px;
+  }
+  .x12 {
+    font-size: $small/2.83;
+  }
 }
 
 $phone-height: $phone-width*1.7;
@@ -207,7 +409,6 @@ div#root {
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   font-weight: 900;
   line-height: 0.98;
-  letter-spacing: -4px;
   z-index:100;
 }
 
@@ -241,7 +442,6 @@ div#root {
   background-image: url('images/img_04.jpg');
   height:100vh;
   p {
-    font-weight:500;
     opacity: 0.7;
     line-height: 1.55;
     white-space: pre;
@@ -258,7 +458,7 @@ div#root {
   }
   p {
     opacity: 0.6;
-    font-weight: 500;
+    font-weight:500;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -294,7 +494,8 @@ pre,p,h1 {
       background-image: url('images/m_img_04.jpg');
       height:100vh;
       padding-bottom: 10vh;
-      p {
+      .p2_1 {
+        white-space: pre;
       }
       p.p2_2_1_kr, p, .p2_2_1_en {
         white-space: pre;
@@ -318,7 +519,7 @@ pre,p,h1 {
   }
   p {
     opacity:0.6;
-    font-weight: 500;
+    
     white-space:pre;
   }
   .p4-flow-box {
@@ -384,10 +585,7 @@ pre,p,h1 {
     height:$lot-width/2;
     p {
       white-space: pre;
-
       margin-bottom: 4vw;
-      
-    
     }
     .p4-flow-icons {
       width:$lot-width/3.8;

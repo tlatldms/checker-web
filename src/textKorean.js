@@ -5,9 +5,8 @@ export const p1_3_1="정보보안 혁신에 도전하는 보안라벨";
 export const p1_3_2="세상에서 가장 안전하고 간편한 보안라벨";
 export const p1_3_3="믿을 수 있는 정품시장을 만들어주는 보안라벨";
 
-export const p2_1="GENUINE MARKET, SECURITY LABEL";
-export const p2_2="'체커(CHECKER)'는 세상에서 가장 안전하고 간편하며\n신뢰할 수 있는 물류플랫폼을 제공하고자 합니다.\n\n"
-export const p2_2_1="제조사는 손쉽게 최고의 보안라벨과 시스템을 도입하고\n소비자들은 제품의 정품확인 및 이력조회 정보를 한눈에 볼 수 있게 하여\n모두가 신뢰할 수 있는 세상을 만들 것입니다.";
+export const p2_1="GENUINE MARKET,\n SECURITY LABEL";
+export const p2_2="'체커(CHECKER)'는 세상에서 가장 안전하고 간편하며\n신뢰할 수 있는 물류플랫폼을 제공하고자 합니다\n\n제조사는 손쉽게 최고의 보안라벨과 시스템을 도입하고\n소비자들은 제품의 정품확인 및 이력조회 정보를 한눈에 볼 수 있게 하여\n모두가 신뢰할 수 있는 세상을 만들 것입니다.";
 
 export const p3_1="사용자가 편한 디바이스";
 export const p3_2="Checker를 도입하면 산업용 PDA가 아닌 스마트폰으로\n누구나 손쉽게 최고의 보안라벨을 사용할 수 있습니다.";
@@ -29,14 +28,12 @@ export const p5_date_2="2018.08";
 export const p5_date_3="2018.10";
 export const p5_date_4="2018.11";
 export const p5_date_5="2018.11";
-export const p5_date_6="2019.04";
 
 export const p5_flow_1="현대자동차 사내스타트업 선발";
 export const p5_flow_2="경기도 블록체인 해커톤/최우수상";
 export const p5_flow_3="ZER01NE day/스타트업 부분 참가";
 export const p5_flow_4="2018 현대자동차 테크데이 참가";
 export const p5_flow_5="2018 현대자동차 스타트업 데모데이\n/최우수상";
-export const p5_flow_6="신용보증기금 NEST 제 5기 선발";
 
 export const p6_FAQ="FAQ";
 export const p6_1="자주 묻는 질문들을 통해 Checker를 자세히 알아보세요.";
