@@ -4,24 +4,24 @@ self.__precacheManifest = [
     "url": "/checker-web/static/media/m_img_04.8d13eff3.jpg"
   },
   {
-    "revision": "1edb4e6086fa6d6860e5",
-    "url": "/checker-web/static/css/main.18961dd3.chunk.css"
+    "revision": "bf01c582c3a42b9a7ab6",
+    "url": "/checker-web/static/css/main.0686d30c.chunk.css"
   },
   {
     "revision": "34a105684d6251bdde68",
     "url": "/checker-web/static/js/runtime~main.fd4b8e3b.js"
   },
   {
-    "revision": "1a7b09b1621bda0fddbc",
-    "url": "/checker-web/static/js/2.50ddfb12.chunk.js"
+    "revision": "bb30bb629b29d03b3bf2",
+    "url": "/checker-web/static/js/2.bf3c2eff.chunk.js"
   },
   {
     "revision": "7bd070adb12775845251f8d676efd86c",
     "url": "/checker-web/static/media/checker-logo-t.7bd070ad.svg"
   },
   {
-    "revision": "e0d8d3f11cb378f8a5b2cd691b8e125c",
-    "url": "/checker-web/static/media/checker-logo-b.e0d8d3f1.svg"
+    "revision": "0f9b604cd14dc1790183f30976a04071",
+    "url": "/checker-web/static/media/checker-logo-b.0f9b604c.svg"
   },
   {
     "revision": "4635ac23a1f3c3dadc593c5deef8e98d",
@@ -56,20 +56,20 @@ self.__precacheManifest = [
     "url": "/checker-web/static/media/lot.73b03010.gif"
   },
   {
-    "revision": "1edb4e6086fa6d6860e5",
-    "url": "/checker-web/static/js/main.f2e0ec80.chunk.js"
+    "revision": "bf01c582c3a42b9a7ab6",
+    "url": "/checker-web/static/js/main.da7a73ee.chunk.js"
   },
   {
     "revision": "47700288efd2f61945742188a85f7af2",
     "url": "/checker-web/static/media/m_img_05.47700288.jpg"
   },
   {
-    "revision": "fd0ae11e001f931d21bdb04dcc7b212b",
-    "url": "/checker-web/static/media/img_04.fd0ae11e.jpg"
-  },
-  {
     "revision": "69c48846f1e7b347af0c9b4f649ac8e5",
     "url": "/checker-web/static/media/img_05.69c48846.jpg"
+  },
+  {
+    "revision": "fd0ae11e001f931d21bdb04dcc7b212b",
+    "url": "/checker-web/static/media/img_04.fd0ae11e.jpg"
   },
   {
     "revision": "cac4577b761984dcb57f4217ce2c0c7c",
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/checker-web/static/media/img_01.8d869b3e.jpg"
   },
   {
-    "revision": "a054c62c195f32021993a1de09c79e44",
+    "revision": "44fe1e2531b686bc9fd0d1555f00c48a",
     "url": "/checker-web/index.html"
   }
 ];
