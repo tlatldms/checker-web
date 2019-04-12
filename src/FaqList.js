@@ -10,6 +10,7 @@ class FaqList extends Component {
                     <Item
                         key={index}
                         obj={data}
+                        text={this.props.text}
                     />
                 )
           );

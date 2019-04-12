@@ -52,11 +52,7 @@ class ImageSlide extends Component {
     render() {
         const Text=languages[this.languageSelect()];
         return (           
-            <div className="test-transition">
-            {console.log(this.languageSelect())}
-            {console.log(this.state.lang)}
-            {console.log(this.state.url)}
-            {console.log(Text["p1_3_"+String(this.state.url)])}
+            <div className="test-transition">ß
                 <div className={`pic${this.state.url} white-text`}>
                     <div className="front white-text">
                         <div className="back white-text">
@@ -256,7 +252,7 @@ class App extends Component {
                     
                     <br/><br/>
                     <div className="Faq-box">
-                        <FaqList />
+                        <FaqList text={Text}/>
                     </div>
                     
                  </div>

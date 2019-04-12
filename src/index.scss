@@ -114,13 +114,14 @@ $lot-width: 80vmin;
     }
   }
   .x16 {
-    font-size:1$large/2.42;
+    font-size: 16px;
   }
   .x14{
     font-size: 12px;
   }
   .x12 {
     font-size: $large/2.83;
+    font-size:12px;
   }
 }
 
@@ -251,6 +252,7 @@ code {
   background-size:cover;
   background-position:center;
   background-color: black;
+  min-height:100vh;
 }
 #root .front {
   @extend .root-back-and-front;
@@ -449,6 +451,7 @@ div#root {
 }
 
 .lock-icon {
+  padding-bottom: 2vh;
 }
 
 .p3-bkgd {
@@ -688,7 +691,7 @@ pre,p,h1 {
 }
 
 .faq-item-box + .faq-item-box {
-  border-top: 0.5px solid black !important;
+  border-top: 1px solid#d8d8d8 !important;
 }
 .faq-item-box {
   width:70vw;
@@ -830,12 +833,13 @@ pre,p,h1 {
 .answer {
   margin-top:1vh;
   margin-bottom:2vh;
+  margin-left:2vh;
 }
 
 
 @media only screen and (max-width: 600px) {
   .answer {
-    margin:0;
+
   }
   .question-text {
     margin:$lot-width/22 0;
@@ -858,8 +862,9 @@ pre,p,h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid 0.5px white;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
   padding: 1.5vh 0;
+  
 }
 
 .before-height {
@@ -1195,7 +1200,7 @@ pre,p,h1 {
 }
 
 .Faq-box {
-  border-top:solid 1.5px black;
+  border-top:solid 1px #d8d8d8;
   
-  border-bottom:solid 1.5px black;
+  border-bottom:solid 1px #d8d8d8;
 }

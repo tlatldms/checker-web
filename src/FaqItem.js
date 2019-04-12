@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import * as Text from 'textKorean';
 import SlideToggle from 'react-slide-toggle';
 import Open from 'images/open.png';
 import Close from 'images/close.png';
@@ -20,7 +19,7 @@ class FaqItem extends Component {
 
     render() {
         const obj = this.props.obj;
-        
+        const Text=this.props.text;
         return (
             <div className="faq-item-box">
         
