@@ -52,7 +52,7 @@ class ImageSlide extends Component {
     render() {
         const Text=languages[this.languageSelect()];
         return (           
-            <div className="test-transition">ß
+            <div className="test-transition">
                 <div className={`pic${this.state.url} white-text`}>
                     <div className="front white-text">
                         <div className="back white-text">
