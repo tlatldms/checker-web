@@ -459,6 +459,11 @@ div#root {
   h1 {
     margin-bottom: 1rem;
   }
+  @media (max-width:376px) {
+    h1 {
+      margin-bottom: 5px;
+    }
+  }
   p {
     opacity: 0.6;
     font-weight:500;
@@ -491,6 +496,12 @@ pre,p,h1 {
 .p2_2_1_kr, .p2_2_1_en {
   white-space: pre;
   width:auto;
+}
+
+.p4_1 {
+  @media (max-width:376px) {
+    margin-bottom:5px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .p2-bkgd {
@@ -617,11 +628,20 @@ pre,p,h1 {
   }
 }
 @media (max-width:768px) {
-  .p4-p {
-    p {
-      white-space:normal;
-    }
+  .p4_3 {
+    white-space:pre;
   }
+}
+  .p4-p {
+    @media (max-width:768px) {
+      p {
+        white-space:normal;
+      }
+      margin-bottom:20px;
+    }
+    @media (max-width:376px) {
+
+    }
 }
 .p4-inner {
   padding:15vh 0;
@@ -802,8 +822,26 @@ pre,p,h1 {
 .lot {
   left:0;
   margin-top: $lot-width/2;
+
   width: $lot-width;
-  
+  @media (max-width:1024px) {
+    width:700px;
+  }
+  @media (max-width: 768px) {
+    width:500px;
+  }
+  @media (max-width: 600px) {
+    width:400px;
+  }
+  @media (max-width: 500px) {
+    width:330px;
+  }
+  @media (max-width:367px) {
+    width:320px;
+  }
+  @media (max-width:320px) {
+    width:280px;
+  }
 }
 .lot-texts {
   position: relative;
@@ -843,7 +881,7 @@ pre,p,h1 {
   }
   .p3-texts {
     p {
-      white-space: pre;
+      white-space: normal;
     }
   }
 }
@@ -1092,6 +1130,9 @@ pre,p,h1 {
     line-height: normal;
     letter-spacing: -2px;
     margin-bottom: 1rem;
+  }
+  @media (max-width:376px) {
+    white-space: pre;
   }
   p{
     opacity: 0.7;
