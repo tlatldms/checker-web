@@ -60,7 +60,7 @@ $lot-width: 80vmin;
       font-size: 18px;
     }
   }
-  .answer-text {
+  .answer {
     .x18 {
       font-size: $huge/2.42;
       font-size: 18px;
@@ -105,12 +105,12 @@ $lot-width: 80vmin;
   }
   .question-text {
     .x18 {
-      font-size: $large/2.26;
+      font-size: 16px;
     }
   }
-  .answer-text {
+  .answer {
     .x18 {
-      font-size: $large/2.42;
+      font-size: 16px;
     }
   }
   .x16 {
@@ -132,32 +132,32 @@ $lot-width: 80vmin;
     font-size: $medium;
   }
   .x45 {
-    font-size: $medium/1.7;
+    font-size: 26px;
   }
   .x40 {
-    font-size: $medium/1.8;
+    font-size: 24px;
   }
   .x28 {
     font-size: $medium/2.42;
   }
   .x25 {
-    font-size: $medium/2.83;
+    font-size: 16px;
   }
   .x24 {
-    font-size: $medium/2.42;
+    font-size: 16px;
   }
   .x22 {
-    font-size: $medium/2.83;
+    font-size: 16px;
   }
   .x20 {
-    font-size: $medium/2.83;
+    font-size: 14px;
   }
   .question-text {
     .x18 {
       font-size: $medium/2.26;
     }
   }
-  .answer-text {
+  .answer {
     .x18 {
       font-size: $medium/2.42;
     }
@@ -187,7 +187,7 @@ $lot-width: 80vmin;
     font-size: $small/2.42;
   }
   .x25 {
-    font-size: $small/2.83;
+    font-size: $small/3;
   }
   .x24 {
     font-size: $small/2.42;
@@ -203,7 +203,7 @@ $lot-width: 80vmin;
       font-size: $small/2.26;
     }
   }
-  .answer-text {
+  .answer {
     .x18 {
       font-size: $small/2.42;
     }
@@ -522,7 +522,6 @@ pre,p,h1 {
   }
   p {
     opacity:0.6;
-    
     white-space:pre;
   }
   .p4-flow-box {
@@ -586,9 +585,7 @@ pre,p,h1 {
     }
   }
 
-  @media (max-width:376px) {
 
-  }
   
   p {
     color:white;
@@ -619,17 +616,17 @@ pre,p,h1 {
 
   }
 }
+@media (max-width:768px) {
+  .p4-p {
+    p {
+      white-space:normal;
+    }
+  }
+}
 .p4-inner {
   padding:15vh 0;
 }
 
-@media (max-width:400px) {
-  .p4-bkgd {
-    p {
-      white-space: normal;
-    }
-  }
-}
 
 .p5-bkgd {
   height: auto;
@@ -655,7 +652,7 @@ pre,p,h1 {
   height:169px;
   
   background-color: #262626;
-  width:100vw;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -692,6 +689,13 @@ pre,p,h1 {
   width:auto;
 
 }
+.footer-checker-img {
+  width:120px;
+  margin-right:10px;
+}
+.footer-hyundai-img {
+  width:100px;
+}
 @media (max-width: 786px) {
   .footer {
     width:100%;
@@ -707,7 +711,7 @@ pre,p,h1 {
     width:100px;
   }
   .footer-hyundai-img {
-    width:100px;
+    width:80px;
   }
 }
 @media (max-width: 376px) {
@@ -725,9 +729,10 @@ pre,p,h1 {
       }
       .footer-checker-img {
         width:120px;
+        margin-right:10px;
       }
       .footer-hyundai-img {
-        width:120px;
+        width:100px;
       }
     }
 
@@ -772,7 +777,7 @@ pre,p,h1 {
 
 .p6-bkgd {
   height:auto;
-  margin:5vh 0;
+  margin:100px 0;
 }
 
 
@@ -866,7 +871,10 @@ pre,p,h1 {
 }
 .faq-rotate-btn {
   //transform: rotate(-45deg);
-  margin:$lot-width/22 0;
+  margin:40px 0;
+  @media (max-width: 376px) {
+    margin: 35px 0;
+  }
   width:$lot-width/21;
 }
 .question-and-button {
@@ -874,22 +882,23 @@ pre,p,h1 {
   justify-content: space-between;
 }
 .question-text {
-  margin:$lot-width/22 0;
+  margin:40px 0;
 
 }
 .answer {
-  margin-top:1vh;
-  margin-bottom:2vh;
+  
+  margin-bottom:20px;
   margin-left:2vh;
+  margin-right:5vh;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 376px) {
   .answer {
 
   }
   .question-text {
-    margin:$lot-width/22 0;
+    margin:30px 0;
 
   }
 }
@@ -913,9 +922,9 @@ pre,p,h1 {
   height:80px;
 
 
-  @media (max-width:1180px) {
-    padding: 0 30px;
-    width:100%;
+  @media (max-width:1300px) {
+    
+    width:90vw;
   }
   @media (max-width:376px) {
     height:50px;
@@ -1023,7 +1032,7 @@ pre,p,h1 {
 }
 
 .date-contents-text {
-  width: 50vmax;
+  width: 470px;
   word-break: break-all;
   
 }
@@ -1254,10 +1263,10 @@ pre,p,h1 {
   border-top:solid 1px #d8d8d8;
   width:979px;
   @media (max-width:1024px) {
-    width:760px;
+    width:745px;
   }
   @media (max-width:768px) {
-    width:90vw;
+    width:90%;
   }
   border-bottom:solid 1px #d8d8d8;
 }

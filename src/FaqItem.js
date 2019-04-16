@@ -45,8 +45,8 @@ class FaqItem extends Component {
                             </div>
                             <div className="my-collapsible__content" ref={setCollapsibleElement}>
                                 <div className="my-collapsible__content-inner">
-                                    <div className="answer x18">
-                                        {Text["p6_a"+String(obj)]}
+                                    <div className="answer">
+                                        <p className="x18">{Text["p6_a"+String(obj)]}</p>
                                     </div>
                                 </div>
                             </div>
