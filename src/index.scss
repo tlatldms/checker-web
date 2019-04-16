@@ -452,6 +452,14 @@ div#root {
 
 .lock-icon {
   padding-bottom: 2vh;
+  @media (max-width: 376px) {
+    padding-bottom: 15px;
+    width:30px;
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+    width:40px;
+  }
 }
 
 .p3-bkgd {
@@ -473,11 +481,6 @@ div#root {
   .p3-bkgd {
     margin-bottom: $lot-width/2;
   }
-  
-.lock-icon {
-  margin-bottom: $lot-width/10;
-}
-
 }
 
 //2페이지 글씨너무떨어짐, use friendly 밑에. 

@@ -58,7 +58,7 @@ class ImageSlide extends Component {
                         <div className="back white-text">
                             <div className="first-texts">
                                 <p className="p1_1 x20">{Text.p1_1}</p>
-                                <br/><br/><br/>
+                                <br/><br/>
                                 <h1 className="p1_2 x100">{Text.p1_2}</h1>
                                 <h1 className="p1_2_1 x100">{Text.p1_2_1}</h1>
                                 <br/>
