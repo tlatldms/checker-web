@@ -53,6 +53,8 @@ class ImageSlide extends Component {
         const Text=languages[this.languageSelect()];
         return (           
             <div className="test-transition">
+            {console.log("width:"+window.innerWidth)}
+            {console.log("width:"+window.innerHeight)}
                 <div className={`pic${this.state.url} white-text`}>
                     <div className="front white-text">
                         <div className="back white-text">
