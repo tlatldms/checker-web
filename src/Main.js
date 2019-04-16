@@ -257,15 +257,17 @@ class App extends Component {
                     
                  </div>
                  <div className="footer">
-                    <div className="footer-left-texts">
-                        <h5 className="x12">{Text.footer_mail}</h5>
-                        <h5 className="x12">{Text.footer_addr}</h5>
-                        <br/>
-                        <h5 className="hchecker-com x12">{Text.footer_domain}</h5>
-                    </div>
-                    <div className="footer-images">
-                        <img className="footer-checker-img" src={FooterLogoA} alt="" />
-                        <img className="footer-hyundai-img" src={FooterLogoB} alt="" />
+                    <div className="footer-inner">
+                        <div className="footer-left-texts">
+                            <h5 className="x12">{Text.footer_mail}</h5>
+                            <h5 className="x12">{Text.footer_addr}</h5>
+                            <br/>
+                            <h5 className="hchecker-com x12">{Text.footer_domain}</h5>
+                        </div>
+                        <div className="footer-images">
+                            <img className="footer-checker-img" src={FooterLogoA} alt="" />
+                            <img className="footer-hyundai-img" src={FooterLogoB} alt="" />
+                        </div>
                     </div>
                  </div>
             </React.Fragment>
