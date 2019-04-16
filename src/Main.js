@@ -228,7 +228,7 @@ class App extends Component {
                                 </div>
                             </div>
                             <div className="p4-on-flow-box">
-                                <h3 className="p4_3 x20">{Text.p4_3}</h3>
+                                <p className="p4_3 x20">{Text.p4_3}</p>
                             </div>
                        
 
