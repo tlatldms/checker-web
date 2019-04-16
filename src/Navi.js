@@ -41,6 +41,7 @@ class Navi extends Component {
                             <button onClick={this.props.selectKr} className={'lan-btn '+(this.props.lang==='kr'?'la-active':'none')+' korean x16'}>
                                 KR
                             </button>
+                            │
                             <button onClick={this.props.selectEn} className={'lan-btn '+(this.props.lang==='en'?'la-active':'none')+ ' english x16'}>
                                 EN
                             </button>    

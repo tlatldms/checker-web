@@ -200,12 +200,12 @@ $lot-width: 80vmin;
   }
   .question-text {
     .x18 {
-      font-size: $small/2.26;
+      font-size: 15px;
     }
   }
   .answer {
     .x18 {
-      font-size: $small/2.42;
+      font-size: 14px;
     }
   }
   .x16 {
@@ -922,7 +922,7 @@ pre,p,h1 {
   @media (max-width: 376px) {
     margin: 35px 0;
   }
-  width:$lot-width/21;
+  width:20px;
 }
 .question-and-button {
   display: flex;
@@ -988,13 +988,16 @@ pre,p,h1 {
 
 .after-height {
   background-color:white;
+  .for-btm-line {
+    border-bottom: solid 1px #d8d8d8;
+  }
   -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
   transition: background-color 0.5s, transform 0.5s;
 }
 
 .before-height .lan-btns .lan-btn{
   color:white;
-  opacity:0.5;
+  opacity:0.3;
 }
 .before-height .lan-btns .lan-btn.la-active {
   opacity: 1;
@@ -1002,7 +1005,7 @@ pre,p,h1 {
 
 
 .after-height .lan-btns .lan-btn{
-  opacity:0.5;
+  opacity:0.3;
 }
 .after-height .lan-btns .lan-btn.la-active {
   opacity: 1;
@@ -1038,6 +1041,10 @@ pre,p,h1 {
   display:flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.lan-btns-inner {
+  color: #d8d8d8;
 }
 
 @media only screen and (max-width: 400px) {
