@@ -194,7 +194,83 @@ class App extends Component {
                         </div>
                     </div>
                  </div>
+                 { /*<P3 />*/}
+                 <div className="p4-bkgd white-text">
+                    <div className="center-texts p4-inner">
+                        <h1 className="p4_1 x45">{Text.p4_1}</h1>
+                        <div className="p4-p"><p className= "x22">{Text.p4_2}</p></div>
+                        
+                            <div className="p4-flow-box">
+                                <div className="p4-flow-circles">
+                                    <img className="p4-flow-icons" src={icon1} alt=""/>
+                                    <pre><p className="x14">{Text.p4_flow_1}</p></pre>
+                                </div>
+                                <div className="p4-arrow">
+                                    ▶
+                                </div>
+                                <div className="p4-flow-circles">
+                                    <img className="p4-flow-icons" src={icon2} alt=""/>
+                                    <pre><p className="x14">{Text.p4_flow_2}</p></pre>
+                                </div>
+                                <div className="p4-arrow">
+                                    ▶
+                                </div>
+                                <div className="p4-flow-circles">
+                                    <img className="p4-flow-icons" src={icon3} alt=""/>
+                                    <pre><p className="x14">{Text.p4_flow_3}</p></pre>
+                                </div>
+                                <div className="p4-arrow">
+                                    ▶
+                                </div>
+                                <div className="p4-flow-circles">
+                                    <img className="p4-flow-icons" src={icon4} alt=""/>
+                                    <pre><p className="x14">{Text.p4_flow_4}</p></pre>        
+                                </div>
+                            </div>
+                            <div className="p4-on-flow-box">
+                                <p className="p4_3 x20">{Text.p4_3}</p>
+                            </div>
+                       
 
+                    </div>
+                 </div>
+                 <div className="full-bkgd p5-bkgd">
+                    <img src={DevIcon} alt="" className="dev-icon"/>
+                    <div className="p5-texts">
+                        <div className="p5-texts-h1"><h1 className="x45">{Text.p5_1}</h1></div>
+                        <div className="p5-texts-p"><p className="x22">{Text.p5_2}</p></div>
+                    </div>
+                    <div className="date-flow">                     
+                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text x20"> {Text[`p5_date_${String(x)}`]} </h6><h6 className="date-contents-text x24"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
+                    </div>
+                 </div>
+                 <div className="full-bkgd p6-bkgd">
+                    {this.listenScroll}
+                    <div className="faq-texts">
+                        <h1 className="x40">{Text.p6_FAQ}</h1>
+                        <p className="x20">{Text.p6_1}</p>
+                    </div>
+                    
+                    <br/><br/>
+                    <div className="Faq-box">
+                        <FaqList text={Text}/>
+                    </div>
+                    
+                 </div>
+                 <div className="footer">
+                    <div className="footer-inner">
+                        <div className="footer-left-texts">
+                            <h5 className="x12">{Text.footer_mail}</h5>
+                            <h5 className="x12">{Text.footer_addr}</h5>
+                            <br/>
+                            <h5 className="hchecker-com x12">{Text.footer_domain}</h5>
+                        </div>
+                        <div className="footer-images">
+                            <img className="footer-checker-img" src={FooterLogoA} alt="" />
+                            <img className="footer-hyundai-img" src={FooterLogoB} alt="" />
+                        </div>
+                    </div>
+                 </div>
             </React.Fragment>
         );
     }
