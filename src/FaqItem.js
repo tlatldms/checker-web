@@ -37,7 +37,7 @@ class FaqItem extends Component {
                         <div className="my-collapsible">
                             <div className="question-and-button">
                                 <div className="question-text">
-                                <p className="x18"><span class="Q">Q{obj}.</span> {Text["p6_q"+String(obj)]}</p>
+                                <p className="x18"><span className="Q">Q{obj}.</span> {Text["p6_q"+String(obj)]}</p>
                                 </div>
                                 <button className={`my-collapsible__toggle faq-btn-${obj}`} onClick={onToggle}>
                                     <img className="faq-rotate-btn" src={this.state.opened===true?Close:Open} alt="" />

@@ -31,7 +31,7 @@ class ImageSlide extends Component {
     static getDerivedStateFromProps(nextProps, prevState){
         if (nextProps.lang !== prevState.lang | nextProps.url !== prevState.url ) {
             return  {lang : nextProps.lang, url: nextProps.url} ;
-        }
+        } else return null;
     }
 
     render() {
@@ -155,7 +155,7 @@ class App extends Component {
                  <div className="full-bkgd center-texts p3-bkgd">  
                     <img className={`phone-img ${phonePosition}`} src={Phone} alt="" />
                     <div className="p3-texts">
-                        <h1 class="x40">{Text.p3_1}</h1>
+                        <h1 className="x40">{Text.p3_1}</h1>
                         <div className={this.state.lang==='kr'?"p3-texts-p":"p3-texts-p-en"}><p className="x22">{Text.p3_2}</p></div>
                     </div>
                     <div className="black-vertical-line-1"></div>
@@ -218,11 +218,10 @@ class App extends Component {
                         <div className="p5-texts-p"><p className="x22">{Text.p5_2}</p></div>
                     </div>
                     <div className="date-flow">                     
-                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both"><h6 className="date-flow-text x20"> {Text[`p5_date_${String(x)}`]} </h6><h6 className="date-contents-text x24"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
+                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both" key={x}><h6 className="date-flow-text x20"> {Text[`p5_date_${String(x)}`]} </h6><h6 className="date-contents-text x24"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
                     </div>
                  </div>
                  <div className="full-bkgd p6-bkgd">
-                    {this.listenScroll}
                     <div className="faq-texts">
                         <h1 className="x40">{Text.p6_FAQ}</h1>
                         <p className="x20">{Text.p6_1}</p>
