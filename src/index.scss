@@ -252,18 +252,20 @@ code {
   background-size:cover;
   background-position:center;
   background-color: black;
-  min-height:100vh;
+
 }
 #root .front {
   @extend .root-back-and-front;
   z-index: 2;
-  opacity: 0.2;
+
+
 }
 
 #root .back {
   @extend .root-back-and-front;
   z-index: 1;
   opacity: 1;
+  height:100vh;
 }
 
 
@@ -274,7 +276,8 @@ code {
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
-  height:100vh;
+  height:50vh;
+  padding-top:20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,12 +293,6 @@ code {
 #root .pic1 .front,
 #root .pic2 .back {
   background-image: url('images/img_01.jpg');
-  p#p1_p_1:after {
-    content: "보안 혁신에 도전하는 보안라벨11";
-  }
-  p#p1_p_en_1:after {
-    content: "Challenging Data security innovation22";
-  }
 }
 #root .pic1.init .back {
   background-image: none;
@@ -303,23 +300,10 @@ code {
 #root .pic2 .front,
 #root .pic3 .back {
   background-image: url('images/img_02.jpg');
-  p#p1_p_2:after {
-    content: "세상에서 가장 안전하고 간편한 보안라벨33";
-  }
-  p#p1_p_en_2:after {
-    content: "The safest and the most simple44";
-  }
 }
 #root .pic3 .front,
 #root .pic1 .back {
   background-image: url('images/img_03.jpg');
-  p#p1_p_3:after {
-    content: "믿을 수 있는 정품시장을 만들어주는 보안라벨55";
-  }
-  p#p1_p_en_3:after {
-    content: "Reliable Genuine Market66";
-  }
-  
 }
 
 @media only screen and (max-width: 600px) {
@@ -408,7 +392,49 @@ div#root {
   color:white;
 }
 
+.white-vertical-line-1 {
+  width:0.01px;
+  height:500px;
+  border: 0.5px solid white;
+  margin: 0 auto;
+}
 
+.white-vertical-line-2 {
+  width:0.01px;
+  height:60px;
+  border: 0.5px solid white;
+  margin: 0 auto;
+}
+
+.black-vertical-line-1 {
+  width:0.01px;
+  height:100px;
+  border: 0.5px solid #262626;
+  margin: 15vh auto;
+
+    @media (max-width: 1024px) {
+   
+    }
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 376px) {
+      height:60px;
+    }
+    
+
+}
+.black-vertical-line-2 {
+  width:0.01px;
+  height:150px;
+  border: 0.5px solid #262626;
+  margin: 0 auto;
+  
+  @media (max-width: 376px) {
+    margin-top:30vh;
+    height:60px;
+  }
+
+}
 .p1_2, .p1_2_1 {
   //margin: -1vw 0;
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
@@ -441,6 +467,22 @@ div#root {
   display:flex;
   align-items:center;
   flex-direction: column;
+}
+
+.p2-center-texts {
+  @extend .center-texts;
+  height:100vh;
+
+  padding-top:40vh;
+  @media (max-height: 1000px) {
+  }
+  @media (max-height: 800px) {
+    padding-top:20vh;
+  }
+  
+  @media (max-width: 420px) {
+    padding-top:50vh;
+  }
 }
 
 .p2-bkgd {
@@ -483,11 +525,7 @@ div#root {
     font-weight:500;
   }
 }
-@media only screen and (max-width: 600px) {
-  .p3-bkgd {
-    margin-bottom: $lot-width/2;
-  }
-}
+
 
 //2페이지 글씨너무떨어짐, use friendly 밑에. 
 //lot 페이지 lot위에 글씨 줄바꿈 관리
@@ -532,8 +570,10 @@ pre,p,h1 {
 
   .p2-texts {
     width: 90vw;
-    
   }
+}
+.p2-texts {
+  margin-bottom: 10vh;
 }
 .p4-bkgd {
   background-image: url('images/img_05.jpg');
@@ -809,6 +849,11 @@ pre,p,h1 {
   .my-collapsible__toggle {
     background-color: transparent;
   }
+
+  .my-collapsible__toggle:focus {
+    outline:none;
+  }
+
   
   @media (max-width:1024px) {
     
@@ -830,12 +875,17 @@ pre,p,h1 {
 }
 
 .lot-box {
-  height:1300px;
+  height:900px;
+ 
   @media (max-width: 768px) {
-    height:900px;
+    height:600px;
   }
   @media (min-height: 1100px) {
-    height:115vh;
+    height:800px;
+  }
+
+  @media (max-width: 376px) {
+    height:50vh;
   }
 }
 
@@ -847,7 +897,6 @@ pre,p,h1 {
 }
 .lot {
   left:0;
-  margin-top: $lot-width/2;
 
   width:730px;
 
@@ -902,9 +951,7 @@ pre,p,h1 {
       white-space: pre;
     }
   }
-  .lot-box {
-    height:600px;
-  }
+
   .p3-texts-p-en {
     width: $lot-width;
   }
@@ -944,6 +991,7 @@ pre,p,h1 {
   }
   width:20px;
 }
+
 .question-and-button {
   display: flex;
   justify-content: space-between;

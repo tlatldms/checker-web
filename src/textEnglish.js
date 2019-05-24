@@ -2,8 +2,8 @@ export const p1_1="hyundai motors group H-startup";
 export const p1_2="BLOCKCHAIN";
 export const p1_2_1="SECURITY LABEL";
 export const p1_3_1="Challenging Data security innovation";
-export const p1_3_2="ssssss";
-export const p1_3_3="ddd";
+export const p1_3_2="The safest and simplest security Label";
+export const p1_3_3="To make the genuine  market reliable";
 
 export const p2_1="GENUINE MARKET,\n SECURITY LABEL";
 export const p2_2="'Checker' is aiming to provide the safest,\nsimplest and the most reliable logistics platform.\n\n";
