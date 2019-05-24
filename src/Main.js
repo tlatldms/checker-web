@@ -50,7 +50,7 @@ class ImageSlide extends Component {
                                 { /* <p id={this.state.lang=="kr"? `p1_p_${this.state.url}`:`p1_p_en_${this.state.url}`}></p>*/}
                                 <p className="p1_3 x28">{Text[`p1_3_${this.state.url}`]}</p>   
                             </div>
-                            <div className="white-vertical-line-1"></div>
+                            <div className="white-vertical-line-0"></div>
                         </div>
                     </div>
                 </div>

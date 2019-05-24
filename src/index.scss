@@ -391,10 +391,17 @@ div#root {
 .white-text {
   color:white;
 }
+.white-vertical-line-0 {
+  width:0.01px;
+  height:300px;
+  border: 0.5px solid white;
+  margin: 0 auto;
+  margin-top:10vh;
+}
 
 .white-vertical-line-1 {
   width:0.01px;
-  height:500px;
+  height:300px;
   border: 0.5px solid white;
   margin: 0 auto;
 }
