@@ -440,7 +440,13 @@ div#root {
     margin-top:30vh;
     height:60px;
   }
+}
 
+.blue-vertical-line {
+  width:0.01px;
+  height:500px;
+  border: 0.5px solid blue;
+  margin: 0 auto;
 }
 .p1_2, .p1_2_1 {
   //margin: -1vw 0;

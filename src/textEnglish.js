@@ -57,6 +57,6 @@ export const p6_a7="-A unique ID is given when the label is printed with 'KOMSCO
 export const p6_q8="Can you customize the App for my company?";
 export const p6_a8="-Yes. 'Checker' Block-chain Platform can be customized for your company with additional charges";
 
-export const footer_mail="hchecker_h@hyundai.com";
+export const footer_mail="checker_H@hyundai.com";
 export const footer_addr="37, Cheoldobangmulgwan-ro, Uiwang-si, Gyeonggi-do, Republic of Korea";
 export const footer_domain="ⓒ Hchecker.com";

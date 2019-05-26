@@ -29,12 +29,14 @@ export const p5_date_2="2018.08";
 export const p5_date_3="2018.10";
 export const p5_date_4="2018.11";
 export const p5_date_5="2018.11";
+export const p5_date_6="2019.04";
 
 export const p5_flow_1="현대자동차 사내스타트업 선발";
 export const p5_flow_2="경기도 블록체인 해커톤/최우수상";
 export const p5_flow_3="ZER01NE day/스타트업 부분 참가";
 export const p5_flow_4="2018 현대자동차 테크데이 참가";
 export const p5_flow_5="2018 현대자동차 스타트업 데모데이\n/최우수상";
+export const p5_flow_6="신용보증기금 NEST 제5기 선발";
 
 export const p6_FAQ="FAQ";
 export const p6_1="자주 묻는 질문들을 통해 Checker를 자세히 알아보세요.";
@@ -55,6 +57,6 @@ export const p6_a7="-라벨은 라벨프린터에서 인쇄 시 해당 고유 ID
 export const p6_q8="우리 회사에 맞도록 앱의 맞춤화가 가능한가요?";
 export const p6_a8="-네 가능합니다. ‘Checker’ 블록체인 플랫폼 기반 커스텀이 가능합니다. 커스텀 비용은 추가 발생됩니다.";
 
-export const footer_mail="hchecker_h@hyundai.com";
-export const footer_addr="16082 경기도 의왕시 철도박물관로 37, 현대자동차 의왕중앙연구소 7층";
+export const footer_mail="checker_H@hyundai.com";
+export const footer_addr="16082 경기도 의왕시 철도박물관로 37, 현대자동차 의왕중앙연구소 7층 H스타트업팀";
 export const footer_domain="ⓒ Hchecker.com";

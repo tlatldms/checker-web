@@ -10,7 +10,7 @@ import icon1 from 'images/pc.svg';
 import icon2 from 'images/printer.svg';
 import icon3 from 'images/label3.png';
 import icon4 from 'images/phone.svg';
-
+import ImageSlide from './ImageSlide';
 import Lot from 'images/lot.gif';
 
 const imgUrls = [1,2,3];
@@ -20,46 +20,6 @@ let languages = {
 }
 let phonePosition;
 
-class ImageSlide extends Component {
-    constructor(props) {
-        super(props);
-        this.state={
-            url: this.props.url
-        }
-    }
-
-    static getDerivedStateFromProps(nextProps, prevState){
-        if (nextProps.lang !== prevState.lang | nextProps.url !== prevState.url ) {
-            return  {lang : nextProps.lang, url: nextProps.url} ;
-        } else return null;
-    }
-
-    render() {
-        const Text=languages[this.props.lang];
-        return (           
-            <div className="test-transition">
-                <div className={`pic${this.state.url} white-text`}>
-                    <div className="front white-text">
-                        <div className="back white-text">
-                            <div className="first-texts">
-                                <p className="p1_1 x20">{Text.p1_1}</p>
-                                <br/><br/>
-                                <h1 className="p1_2 x100">{Text.p1_2}</h1>
-                                <h1 className="p1_2_1 x100">{Text.p1_2_1}</h1>
-                                <br/>
-                                { /* <p id={this.state.lang=="kr"? `p1_p_${this.state.url}`:`p1_p_en_${this.state.url}`}></p>*/}
-                                <p className="p1_3 x28">{Text[`p1_3_${this.state.url}`]}</p>   
-                            </div>
-                            <div className="white-vertical-line-0"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>      
-        );
-    }   
-}
-
-
 class App extends Component {
     constructor (props) {
         super(props);
@@ -67,14 +27,9 @@ class App extends Component {
         this.selectKr = this.selectKr.bind(this);
         this.state = {
             currentImageIndex: 1,
-            lang: 'kr'
+            lang: 'en'
         };
         this.nextSlide = this.nextSlide.bind(this);
-    }
-
-    state={
-        scroll: 3,
-        lang: 'kr'
     }
 
     nextSlide() {
@@ -112,14 +67,14 @@ class App extends Component {
         
         this.interval = setInterval(() => {
             this.nextSlide();
-            }, 3000);
-           
+            }, 4000);
     }
     
-      componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll)
-        clearInterval(this.interval);
-      }
+    componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+    clearInterval(this.interval);
+    }
+
     listenScroll = (e) => {
         this.setState({ scroll: window.pageYOffset });
     }
@@ -139,7 +94,7 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Navi selectEn={this.selectEn} selectKr={this.selectKr} lang={this.state.lang}/>               
-                <ImageSlide url={imgUrls[this.state.currentImageIndex]} lang={this.state.lang} className="full-bkgd tmptmp"/>                   
+                <ImageSlide url={imgUrls[this.state.currentImageIndex]} text={Text} className="full-bkgd tmptmp"/>                   
                 <div className="full-bkgd white-text p2-bkgd">
                     <div className="p2-center-texts">
                     <img src={LockIcon} alt="" className="lock-icon"/>
@@ -218,7 +173,8 @@ class App extends Component {
                         <div className="p5-texts-p"><p className="x22">{Text.p5_2}</p></div>
                     </div>
                     <div className="date-flow">                     
-                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both" key={x}><h6 className="date-flow-text x20"> {Text[`p5_date_${String(x)}`]} </h6><h6 className="date-contents-text x24"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
+                        {[1,2,3,4,5,6].map(x=>{ return <div className="dates-both" key={x}><h6 className="date-flow-text x20"> {Text[`p5_date_${String(x)}`]} </h6>
+                        <h6 className="date-contents-text x24"> {Text[`p5_flow_${String(x)}`]} </h6></div>}) }         
                     </div>
                  </div>
                  <div className="full-bkgd p6-bkgd">
