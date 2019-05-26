@@ -1000,6 +1000,7 @@ pre,p,h1 {
   }
 }
 .faq-rotate-btn {
+  z-index:9999999;
   //transform: rotate(-45deg);
   margin:40px 0;
   @media (max-width: 376px) {
