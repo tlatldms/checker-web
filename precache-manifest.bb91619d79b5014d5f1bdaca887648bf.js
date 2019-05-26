@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/checker-web/static/media/m_img_04.8d13eff3.jpg"
   },
   {
-    "revision": "fb7b805f03214bee029b",
-    "url": "/checker-web/static/css/main.8511ea49.chunk.css"
+    "revision": "7a70cae9e6773cc0cad1",
+    "url": "/checker-web/static/css/main.b96d9b0a.chunk.css"
   },
   {
     "revision": "34a105684d6251bdde68",
@@ -56,20 +56,20 @@ self.__precacheManifest = [
     "url": "/checker-web/static/media/lot.73b03010.gif"
   },
   {
-    "revision": "fb7b805f03214bee029b",
-    "url": "/checker-web/static/js/main.f8841f1a.chunk.js"
+    "revision": "7a70cae9e6773cc0cad1",
+    "url": "/checker-web/static/js/main.36745873.chunk.js"
   },
   {
     "revision": "47700288efd2f61945742188a85f7af2",
     "url": "/checker-web/static/media/m_img_05.47700288.jpg"
   },
   {
-    "revision": "69c48846f1e7b347af0c9b4f649ac8e5",
-    "url": "/checker-web/static/media/img_05.69c48846.jpg"
-  },
-  {
     "revision": "fd0ae11e001f931d21bdb04dcc7b212b",
     "url": "/checker-web/static/media/img_04.fd0ae11e.jpg"
+  },
+  {
+    "revision": "69c48846f1e7b347af0c9b4f649ac8e5",
+    "url": "/checker-web/static/media/img_05.69c48846.jpg"
   },
   {
     "revision": "cac4577b761984dcb57f4217ce2c0c7c",
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/checker-web/static/media/img_01.8d869b3e.jpg"
   },
   {
-    "revision": "3aa05c42c3c5e6901465e8248442ace5",
+    "revision": "c2303f00fdb4109ac301ec511807055f",
     "url": "/checker-web/index.html"
   }
 ];
