@@ -864,7 +864,8 @@ pre,p,h1 {
   width:100%;
   .my-collapsible__toggle {
     background-color: transparent;
-    width:auto;
+    width:30px;
+    height:$lot-width/10;
   }
 
   .my-collapsible__toggle:focus {
