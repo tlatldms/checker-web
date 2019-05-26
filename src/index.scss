@@ -865,7 +865,7 @@ pre,p,h1 {
   .my-collapsible__toggle {
     background-color: transparent;
     width:30px;
-    height:$lot-width/10;
+    height:80px;
   }
 
   .my-collapsible__toggle:focus {
@@ -1004,9 +1004,9 @@ pre,p,h1 {
 .faq-rotate-btn {
   z-index:9999999;
   //transform: rotate(-45deg);
-  margin:40px 10px;
+  margin:40px 0;
   @media (max-width: 376px) {
-    margin: 35px 10px;
+    margin: 35px 0;
   }
   width:20px;
 }
