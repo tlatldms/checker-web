@@ -404,6 +404,9 @@ div#root {
   height:300px;
   border: 0.5px solid white;
   margin: 0 auto;
+  @media (max-width: 376px) {
+    height:100px;
+  }
 }
 
 .white-vertical-line-2 {
