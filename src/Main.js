@@ -8,7 +8,7 @@ import DevIcon from 'images/develop.svg';
 import LockIcon from 'images/lock.svg';
 import icon1 from 'images/pc.svg';
 import icon2 from 'images/printer.svg';
-import icon3 from 'images/label3.png';
+import icon3 from 'images/label4.svg';
 import icon4 from 'images/phone.svg';
 import ImageSlide from './ImageSlide';
 import Lot from 'images/lot.gif';

@@ -1003,9 +1003,9 @@ pre,p,h1 {
 .faq-rotate-btn {
   z-index:9999999;
   //transform: rotate(-45deg);
-  margin:40px 0;
+  margin:40px 10px;
   @media (max-width: 376px) {
-    margin: 35px 0;
+    margin: 35px 10px;
   }
   width:20px;
 }
