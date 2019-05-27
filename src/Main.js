@@ -116,9 +116,10 @@ class App extends Component {
                         <div className={this.state.lang==='kr'?"p3-texts-p":"p3-texts-p-en"}><p className="x22">{Text.p3_2}</p></div>
                     </div>
                     <div className="black-vertical-line-1"></div>
-                    <div className="lot-box">
-
-                        <img src={Lot} className="lot" alt="" />
+                    <div className="lot-box" >
+                        <div className="lot-outer">
+                            <img src={Lot} className="lot" alt="" />
+                        </div>
                         <div className="lot-texts-inner">
                             <h1 className="x40">{Text.p3_3}</h1>
                             <div className="lot-texts-p"><p className="x22">{Text.p3_4}</p></div>
