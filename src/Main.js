@@ -93,10 +93,10 @@ class App extends Component {
        const Text=languages[this.languageSelect()];
         return (
             <React.Fragment>
-                {/* <Navi selectEn={this.selectEn} selectKr={this.selectKr} lang={this.state.lang}/>               
+                 <Navi selectEn={this.selectEn} selectKr={this.selectKr} lang={this.state.lang}/>               
                 
                 <ImageSlide url={imgUrls[this.state.currentImageIndex]} text={Text} className="full-bkgd tmptmp"/>                   
-                */}
+                
                 <div className="full-bkgd white-text p2-bkgd">
                     <div className="p2-center-texts">
                     <img src={LockIcon} alt="" className="lock-icon"/>
