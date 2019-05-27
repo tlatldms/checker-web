@@ -119,20 +119,27 @@ class App extends Component {
                     <div className="lot-box">
 
                         <img src={Lot} className="lot" alt="" />
-                        <div className="lot-texts">
+                        <div className="lot-texts-inner">
+                            <h1 className="x40">{Text.p3_3}</h1>
+                            <div className="lot-texts-p"><p className="x22">{Text.p3_4}</p></div>
+                        </div>      
+                        <div className="lot-texts-outer">
                             <h1 className="x40">{Text.p3_3}</h1>
                             <div className="lot-texts-p"><p className="x22">{Text.p3_4}</p></div>
                         </div>
+                        
                         
                     </div>
                     <div className="black-vertical-line-2"></div>
                  </div>
                  { /*<P3 />*/}
+                 
                  <div className="p4-bkgd white-text">
                  <div className="white-vertical-line-2"></div>
                     <div className="center-texts p4-inner">
                         <h1 className="p4_1 x45">{Text.p4_1}</h1>
-                        
+                        <div className="p4-p"><p className= "x22">{Text.p4_2}</p></div>
+                         
                             <div className="p4-flow-box">
                                 <div className="p4-flow-circles">
                                     <img className="p4-flow-icons" src={icon1} alt=""/>
@@ -167,6 +174,7 @@ class App extends Component {
 
                     </div>
                  </div>
+                 
                  <div className="full-bkgd p5-bkgd">
                     <img src={DevIcon} alt="" className="dev-icon"/>
                     <div className="p5-texts">
@@ -190,22 +198,28 @@ class App extends Component {
                     </div>
                     
                  </div>
+      
+      
                  <div className="footer">
                     <div className="footer-inner">
+                        
                         <div className="footer-left-texts">
                             <h5 className="x12">{Text.footer_mail}</h5>
                             <h5 className="x12">{Text.footer_addr}</h5>
                             <br/>
                             <h5 className="hchecker-com x12">{Text.footer_domain}</h5>
                         </div>
-                        {/* 
-                        <div className="footer-images">
-                            <img className="footer-checker-img" src={FooterLogoA} alt="" />
-                            <img className="footer-hyundai-img" src={FooterLogoB} alt="" />
+                         <div className="footer-images-outer">
+                            <div className="footer-images">
+                                <img className="footer-checker-img" src={FooterLogoA} alt="" />
+                                <img className="footer-hyundai-img" src={FooterLogoB} alt="" />
+                            </div>
                         </div>
-                        */}
+                        
+                        
                     </div>
                  </div>
+                 
             </React.Fragment>
         );
     }

@@ -8,6 +8,7 @@
     "include-media": "^1.4.9",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.8.6",
     "react-gsap": "^1.2.0",
     "react-router-dom": "^5.0.0",
